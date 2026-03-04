@@ -1,0 +1,664 @@
+
+# Follett ED Design System — Style Guide
+
+> **Developer reference only.** This file is not linked in the app UI.  
+> The live interactive version is accessible at `/style-guide` for local development.  
+> Copy this file into any new Claude/Glean Code project as `STYLE_GUIDE.md` to maintain a consistent design language.
+
+---
+
+## Brand Identity
+
+| Token        | Value                     | Use                     |
+|-------------|---------------------------|-------------------------|
+| Primary font | `Inter`                  | All UI text             |
+| Logo mark    | Follett Flame (orange)   | App icons, avatars, accent moments |
+| Brand voice  | Trustworthy, clear, education-first | Copy and microcopy |
+
+---
+
+## Color Tokens
+
+All tokens are CSS custom properties defined in `src/index.css` via:
+
+```css
+:root {
+  /* tokens live here */
+}
+```
+
+### Brand Blues (Primary)
+
+| Token                    | Hex       | Use                                   |
+|--------------------------|-----------|---------------------------------------|
+| `--follett-blue-dark`    | `#0F2440` | Dark sidebar background               |
+| `--follett-blue`         | `#1B3A5C` | Page titles, primary text emphasis    |
+| `--follett-blue-medium`  | `#1A6EB5` | Links, active nav, primary actions    |
+| `--follett-blue-light`   | `#2A5A8C` | Hover states                          |
+| `--follett-blue-lighter` | `#E8F0F8` | Subtle backgrounds, highlight rows    |
+
+### Orange — Follett Flame (Accent)
+
+| Token                   | Hex       | Use                         |
+|-------------------------|-----------|-----------------------------|
+| `--follett-orange-dark` | `#C45E0E` | Hover on orange buttons     |
+| `--follett-orange`      | `#F47B20` | CTAs, avatars, accent icons |
+| `--follett-orange-light`| `#FEF0E6` | Orange badge backgrounds    |
+
+### Teal (Secondary Accent)
+
+| Token                    | Hex       | Use                                |
+|--------------------------|-----------|------------------------------------|
+| `--follett-teal`         | `#00838F` | Secondary badges, user avatars     |
+| `--follett-teal-light`   | `#4DB6AC` | Teal button hover                  |
+| `--follett-teal-lighter` | `#E0F7FA` | Teal badge backgrounds             |
+
+### Status / Semantic Colors
+
+| Token              | Hex       | Paired BG Token                              |
+|--------------------|-----------|----------------------------------------------|
+| `--status-success` | `#2E7D32` | `--status-success-bg` `#E8F5E9`             |
+| `--status-warning` | `#F57F17` | `--status-warning-bg` `#FFF8E1`             |
+| `--status-error`   | `#C62828` | `--status-error-bg` `#FFEBEE`               |
+| `--status-info`    | `#1565C0` | `--status-info-bg` `#E3F2FD`                |
+
+### Risk Levels
+
+| Token               | Hex       | Paired BG Token                           |
+|---------------------|-----------|-------------------------------------------|
+| `--risk-low`        | `#2E7D32` | `--risk-low-bg` `#E8F5E9`                |
+| `--risk-medium`     | `#F57F17` | `--risk-medium-bg` `#FFF8E1`             |
+| `--risk-high`       | `#E65100` | `--risk-high-bg` `#FFF3E0`               |
+| `--risk-critical`   | `#B71C1C` | `--risk-critical-bg` `#FFEBEE`           |
+
+### Neutrals (Gray Scale)
+
+| Token        | Hex       | Notes                      |
+|-------------|-----------|----------------------------|
+| `--gray-50` | `#F7F8FA` | App background             |
+| `--gray-100`| `#F0F2F5` | Hover backgrounds          |
+| `--gray-200`| `#EEEEEE` | Borders, dividers          |
+| `--gray-300`| `#E0E0E0` | Stronger borders           |
+| `--gray-400`| `#BDBDBD` | Disabled / placeholder     |
+| `--gray-500`| `#9E9E9E` | Secondary text             |
+| `--gray-600`| `#757575` | Meta / caption text        |
+| `--gray-700`| `#616161` |                              |
+| `--gray-800`| `#424242` | Body text                  |
+| `--gray-900`| `#212121` | Primary text               |
+
+### Layout Chrome
+
+| Token                        | Hex       | Use                                   |
+|-----------------------------|-----------|---------------------------------------|
+| `--topbar-bg`               | `#C8D9EC` | Top header bar                        |
+| `--sidebar-light-bg`        | `#FFFFFF` | Light sidebar                         |
+| `--sidebar-light-active-bg` | `#E4ECF6` | Active nav item (light sidebar)       |
+| `--sidebar-light-active-color` | `#1A6EB5` | Active nav text (light sidebar)   |
+
+---
+
+## Typography
+
+**Font stack:**  
+`'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`  
+**Token:** `--font-family`
+
+| Role    | Size | Weight | Notes                                                       |
+|---------|------|--------|-------------------------------------------------------------|
+| Display | 36px | 700    | Hero stat headers only                                     |
+| H1      | 28px | 700    | Page headings                                              |
+| H2      | 22px | 700    | Section headings                                           |
+| H3      | 18px | 600    | Card titles                                                |
+| H4      | 16px | 600    | Sub-section labels                                         |
+| Body    | 14px | 400    | Default body copy                                          |
+| Small   | 13px | 400    | Secondary text, timestamps                                 |
+| Label   | 12px | 600    | Uppercase table headers, nav sections (`letter-spacing: 0.5px`) |
+| Caption | 11px | 500    | Footnotes, chart labels                                    |
+
+**Stat numbers:** 40px / 32px / 28px at weight 700 in `--follett-blue`.
+
+---
+
+## Spacing Scale
+
+| px  | Common Use                          |
+|-----|-------------------------------------|
+| 4px | Icon gaps, tight padding            |
+| 8px | Button padding (compact), small gaps|
+| 12px| Default list gaps, inner card padding |
+| 16px| Standard padding, form element gaps |
+| 20px| Section subheadings margin          |
+| 24px| Card padding, header padding        |
+| 32px| Section spacing                     |
+| 48px| Major section breaks                |
+
+---
+
+## Border Radius
+
+| Token          | Value | Use                          |
+|----------------|-------|------------------------------|
+| `--radius-sm`  | 4px   | Tags, small inputs           |
+| `--radius-md`  | 8px   | Buttons, nav links, cards    |
+| `--radius-lg`  | 12px  | Modals, menus                |
+| `--radius-xl`  | 16px  | Large cards, feature panels  |
+
+---
+
+## Shadows
+
+| Token          | Value                               |
+|----------------|-------------------------------------|
+| `--shadow-sm`  | `0 1px 2px rgba(0,0,0,0.06)`        |
+| `--shadow-md`  | `0 4px 6px rgba(0,0,0,0.07)`        |
+| `--shadow-lg`  | `0 10px 15px rgba(0,0,0,0.1)`       |
+| `--shadow-xl`  | `0 20px 25px rgba(0,0,0,0.12)`      |
+
+---
+
+## Layout Dimensions
+
+| Token             | Value  |
+|-------------------|--------|
+| `--sidebar-width` | 232px  |
+| `--header-height` | 64px   |
+
+---
+
+## Component Classes
+
+Use the following structural classes when building prototypes or production UI. When AI generates markup, normalize it to these classes during refinement.
+
+### Buttons
+
+```html
+<!-- Variants -->
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-teal">Teal</button>
+<button class="btn btn-orange">Orange</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-ghost">Ghost</button>
+<button class="btn btn-action">Actions ▾</button>
+
+<!-- Sizes -->
+<button class="btn btn-primary btn-sm">Small</button>
+<button class="btn btn-primary">Default</button>
+<button class="btn btn-primary btn-lg">Large</button>
+```
+
+**Button behavior guidelines**
+
+- Primary actions use `btn-primary` with `--follett-blue-medium` and live in consistent locations (bottom-right of forms, top-right of pages).  
+- Destructive actions always use `btn-danger` and pair with confirmation patterns.  
+- Ghost / secondary actions are visually de-emphasized and never compete with the primary CTA.
+
+---
+
+### Badges
+
+```html
+<!-- Risk -->
+<span class="badge badge-low">Low Risk</span>
+<span class="badge badge-medium">Medium Risk</span>
+<span class="badge badge-high">High Risk</span>
+<span class="badge badge-critical">Critical</span>
+
+<!-- Workflow Status -->
+<span class="badge badge-approved">Approved</span>
+<span class="badge badge-denied">Denied</span>
+<span class="badge badge-draft">Draft</span>
+<span class="badge badge-review">In Review</span>
+<span class="badge badge-archived">Archived</span>
+<span class="badge badge-submitted">Submitted</span>
+<span class="badge badge-follett">Follett Verified</span>
+
+<!-- Urgency -->
+<span class="badge badge-urgency-low">Low</span>
+<span class="badge badge-urgency-medium">Medium</span>
+<span class="badge badge-urgency-high">High</span>
+```
+
+---
+
+### Alerts
+
+```html
+<div class="alert alert-info">Informational text…</div>
+<div class="alert alert-success">Success text…</div>
+<div class="alert alert-warning">Warning text…</div>
+<div class="alert alert-error">Error text…</div>
+```
+
+**Alert usage**
+
+- Always include a clear title or leading phrase: “Couldn’t save changes”, “3 devices require attention”, etc.  
+- For destructive or blocking errors, combine `alert-error` with an action (Retry, Download log, Contact support).  
+- Avoid stacking more than one persistent alert per page; consolidate messages where possible.
+
+---
+
+### Avatars
+
+```html
+<!-- Square avatars (initials) -->
+<div class="avatar-square orange lg">JS</div>   <!-- 40px -->
+<div class="avatar-square blue">MA</div>       <!-- 32px default -->
+<div class="avatar-square teal sm">PD</div>    <!-- 24px -->
+
+<!-- Color modifiers: orange | blue | teal -->
+<!-- Size modifiers: sm (24px) | default (32px) | lg (40px) -->
+```
+
+Use avatars for people, organizations, or services that recur in lists (e.g., vendors, schools, users).
+
+---
+
+### Sidebar Variants
+
+```html
+<!-- Dark (default) -->
+<aside class="sidebar">…</aside>
+
+<!-- Light (current production variant) -->
+<aside class="sidebar sidebar-light">…</aside>
+```
+
+Sidebars should:
+
+- Anchor navigation consistently on the left.  
+- Use badges and icons to indicate status, not raw text only.  
+
+---
+
+### Top Header Variants
+
+```html
+<!-- Branded blue-gray (current) -->
+<header class="top-header">…</header>
+
+<!-- Alternative branded variant -->
+<header class="top-header top-header-branded">…</header>
+```
+
+Headers show context (product, school year, location) and current user actions (search, profile, alerts).
+
+---
+
+### Cards & Layout
+
+```html
+<div class="card">
+  <div class="card-body">…</div>
+</div>
+
+<div class="stats-grid">
+  <!-- Static stat card -->
+  <div class="stat-card">
+    <div class="stat-icon blue">…</div> <!-- blue | orange | red | green -->
+    <div class="stat-content">
+      <h4>142</h4>
+      <p>AI Tools Registered</p>
+    </div>
+  </div>
+
+  <!-- Clickable/navigable stat card — adds hover style + arrow affordance -->
+  <div class="stat-card stat-card-link" onClick={…}>
+    <div class="stat-icon red">…</div>
+    <div class="stat-content">
+      <h4>8</h4>
+      <p>Vendor Risk Alerts</p>
+    </div>
+    <ChevronRight size={16} className="stat-link-arrow" />
+  </div>
+</div>
+```
+
+> **`.stat-card-link` behavior:** On hover, the card background shifts to `--follett-blue-lighter`, border turns `--follett-blue-medium`, subtitle text picks up the blue, and the arrow nudges 3px right.  
+> Use this class any time a stat card navigates somewhere, and always pair with a `ChevronRight` icon carrying the `.stat-link-arrow` class.
+
+---
+
+### Tables
+
+```html
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Column</th>
+        <!-- more columns -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="clickable">
+        <td>…</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+Guidelines:
+
+- Column headers use `Label` typography (12px, uppercase) with clear sort affordances where applicable.  
+- Clickable rows use `.clickable` plus hover background (`--follett-blue-lighter`) and cursor pointer.  
+- Never rely on color alone to indicate row state; pair with icons or badges.
+
+---
+
+### Forms
+
+```html
+<div class="form-row">
+  <div class="form-group">
+    <label class="form-label">Field Name</label>
+    <input class="form-input" type="text" placeholder="…" />
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="form-label">Select Field</label>
+  <select class="form-select">
+    …
+  </select>
+</div>
+
+<div class="form-group">
+  <label class="form-label">Description</label>
+  <textarea class="form-textarea"></textarea>
+</div>
+
+<label class="form-checkbox">
+  <input type="checkbox" />
+  Label text
+</label>
+```
+
+Form behavior:
+
+- Group related fields into logical sections with H3/H4 headings.  
+- Always show required vs optional explicitly (e.g., “School Name *” or inline “Required”).  
+- Validation messages appear directly under the field using `Small` text and appropriate status color.
+
+---
+
+### Tabs
+
+```html
+<div class="tabs">
+  <button class="tab active">Tab One</button>
+  <button class="tab">Tab Two</button>
+</div>
+```
+
+- Use tabs to separate closely related content (e.g., Summary / Details / History), not unrelated features.  
+- The active tab must always be visually obvious (`--follett-blue-medium`, bold text, underline or bottom border).
+
+---
+
+## Design Principles
+
+**Clarity over cleverness.**  
+Every screen should communicate status and action at a glance — especially for district admins who spend seconds, not minutes, reviewing dashboards.
+
+**Consistent density.**  
+Use `14px` body text and `24px` card padding as defaults. Only go tighter in data-dense tables; only go larger in hero/stat moments.
+
+**Color carries meaning.**  
+Orange = attention/action, Blue = structure/trust, Teal = secondary highlights, Red = risk/error. Don’t use these colors decoratively in ways that conflict with their semantic roles.
+
+**Accessible contrast.**  
+All primary text on light backgrounds should meet WCAG AA. Status colors are always paired with text labels — never rely on color alone.
+
+---
+
+## Usability Heuristics for Prototypes & Working Software
+
+Use Jakob Nielsen’s 10 usability heuristics as a checklist whenever you:
+
+- Design new screens or flows  
+- Refine AI-generated prototypes  
+- Implement working software in code
+
+For each heuristic below, **prototypes must express the intent**, and **production code must implement it fully**.
+
+### 1. Visibility of System Status
+
+The system should always keep users informed about what is going on, through timely and clear feedback.
+
+**Patterns**
+
+- Use `alert-*` components for saves, errors, and long-running operations.  
+- Show inline status badges (`badge-*`, `badge-urgency-*`, risk-level badges) near the objects they describe.  
+- For async actions (imports, AI jobs, large saves), pair a loading indicator with text (“Importing 234 assets… about 30 seconds remaining”).
+
+**When building prototypes**
+
+- Include realistic loading/empty/error states, not just the happy path.  
+- Show where progress feedback will appear (e.g., skeleton rows in tables, disabled buttons with “Saving…”).
+
+**When implementing**
+
+- Ensure API calls surface actionable messages on failure (not generic “Something went wrong”).  
+- Keep status close to the user’s last interaction (e.g., under the form they just submitted).
+
+---
+
+### 2. Match Between System and the Real World
+
+Use language, concepts, and flows that match how K–12 users think about their work.
+
+**Patterns**
+
+- Use K–12 terms (school, building, asset, work order, event, patron) consistently across tables, forms, and badges.  
+- Organize information following real workflows: request → approval → completion; draft → review → approved → archived.
+
+**When building prototypes**
+
+- Label columns and fields with user-centered language (e.g., “Location” instead of “Org Unit ID”).  
+- Order columns and form fields to match users’ mental models and current paper/spreadsheet processes.
+
+**When implementing**
+
+- Don’t leak database jargon, API names, or tech constraints into UI labels and errors.  
+- Keep units and formats familiar (school years, terms, building names, room numbers).
+
+---
+
+### 3. User Control and Freedom
+
+Users need clear exits from actions, and the ability to undo or change course without fear.
+
+**Patterns**
+
+- Provide clear “Cancel” or “Back” actions in dialogs, drawers, and multi-step flows.  
+- For destructive actions, pair `btn-danger` with confirmation patterns and, where possible, an Undo (e.g., “Moved to Archive. Undo”).  
+- Make navigation stat cards (`.stat-card-link`) and clickable table rows reversible via filters or history.
+
+**When building prototypes**
+
+- Show cancel/close affordances on all modals and side panels.  
+- Include examples of Undo or reversal where data can be safely rolled back.
+
+**When implementing**
+
+- Avoid trapping users in modal-only flows; respect browser Back where it makes sense.  
+- Ensure actions like delete/archive can be reversed through UI (e.g., Archived tab + Restore).
+
+---
+
+### 4. Consistency and Standards
+
+Users shouldn’t have to wonder whether different words, situations, or actions mean the same thing.
+
+**Patterns**
+
+- Reuse the style guide’s tokens, components, and spacing everywhere.  
+- Make components predictable: primary buttons aligned consistently, same label and icon for the same action in every context.  
+- Use status color and badge conventions uniformly (e.g., “Critical” is always `badge-critical`).
+
+**When building prototypes**
+
+- Normalize AI-generated markup into these classes and typography roles.  
+- Don’t invent new colors, fonts, or shadows for one-off screens.
+
+**When implementing**
+
+- Centralize design tokens in CSS and reuse React/Vue components instead of bespoke one-off implementations.  
+- Use shared helpers for status mapping so the same status always renders with the same badge.
+
+---
+
+### 5. Error Prevention
+
+Prevent problems where possible instead of just showing good error messages.
+
+**Patterns**
+
+- Use constrained inputs (selects, date pickers, toggles) instead of free text where appropriate.  
+- Validate critical fields client-side before submitting forms and highlight specific fields with clear messages.  
+- Use risk and status colors to surface risky conditions before they become errors.
+
+**When building prototypes**
+
+- Show disabled states, input constraints, and inline hints instead of leaving everything as an active text box.  
+- Represent guardrails (e.g., greyed-out options, helper text like “This can’t be changed later”).
+
+**When implementing**
+
+- Add real-time validation for key fields (e.g., asset tags, barcodes, dates) with immediate feedback.  
+- Confirm irreversible actions (e.g., “This will notify all building admins”) before executing.
+
+---
+
+### 6. Recognition Rather Than Recall
+
+Reduce the need for users to remember information across screens.
+
+**Patterns**
+
+- Use search, filters, and typeahead instead of requiring IDs or codes from memory.  
+- Keep key context (school, building, asset, person) visible in headers, breadcrumbs, or sticky cards.  
+- Use consistent icons and badges so meaning can be recognized at a glance.
+
+**When building prototypes**
+
+- Include realistic filter chips, typeahead dropdowns, and summary headers.  
+- Keep critical context visible while drilling into details (e.g., asset summary pinned above tabs).
+
+**When implementing**
+
+- Avoid multi-page flows that require users to remember details from earlier steps without summary recap.  
+- Keep table column labels and tooltips descriptive enough that users don’t need separate documentation to interpret them.
+
+---
+
+### 7. Flexibility and Efficiency of Use
+
+Support both beginners and experts, letting regular users accelerate frequent actions.
+
+**Patterns**
+
+- Provide keyboard-friendly flows (tab order, Enter to submit, Esc to close modals).  
+- Offer high-efficiency patterns: bulk actions in tables, saved filters, templates, and sensible defaults.  
+- Use `btn-action` menus (“Actions ▾”) for advanced options without overwhelming beginners.
+
+**When building prototypes**
+
+- Include bulk-selection states in tables and show where bulk actions will live.  
+- Represent shortcuts like “Use previous event settings” or “Apply template” even if not fully implemented yet.
+
+**When implementing**
+
+- Persist last-used filters, sort orders, or views per user where appropriate.  
+- Expose keyboard shortcuts and power features unobtrusively (tooltips, help panel).
+
+---
+
+### 8. Aesthetic and Minimalist Design
+
+Interfaces should not contain irrelevant or rarely needed information.
+
+**Patterns**
+
+- Use the spacing scale and typography hierarchy to highlight what matters and de-emphasize the rest.  
+- Keep dashboards focused: a small number of stat cards, targeted tables, and clear calls to action.  
+- Avoid decorative color use that competes with semantic color meanings.
+
+**When building prototypes**
+
+- Remove placeholder text and lorem ipsum early; replace with realistic, concise copy.  
+- Resist adding extra cards, charts, or columns “just because we can.”
+
+**When implementing**
+
+- Hide advanced details behind “View details” / “Show more” patterns where it doesn’t affect core workflows.  
+- Regularly prune unused filters, columns, and options based on usage and feedback.
+
+---
+
+### 9. Help Users Recognize, Diagnose, and Recover from Errors
+
+When errors do occur, users should understand what happened and how to fix it.
+
+**Patterns**
+
+- Use `alert-error` with clear, plain language (no internal error codes as the primary message).  
+- Point directly to the problem field or object (e.g., highlight the specific row or form group).  
+- Offer next steps: Retry, Download log, Contact support, or clear instruction on what they must correct.
+
+**When building prototypes**
+
+- Include examples of error messages in context: under fields, above tables, and as banners.  
+- Show both technical error fallback and user-friendly versions in annotation if needed.
+
+**When implementing**
+
+- Map backend errors into user-friendly messages; don’t just surface raw exception text.  
+- Log detailed error info server-side but keep UI messages focused on user actions and recovery.
+
+---
+
+### 10. Help and Documentation
+
+Even with a simple design, users sometimes need guidance.
+
+**Patterns**
+
+- Provide contextual help: tooltips, inline helper text, and “?” icons linked to short explanations.  
+- Link to documentation or how-to content from complex flows (e.g., asset imports, integrations).  
+- Keep language concise and action-oriented.
+
+**When building prototypes**
+
+- Indicate where help will appear (tooltips, side panels, inline “Learn more” links).  
+- Use realistic, K–12-specific help copy where possible.
+
+**When implementing**
+
+- Ensure help content is discoverable from the UI (not just an external site).  
+- Keep help up to date with new features and changed workflows.
+
+---
+
+## Applying the Heuristics in AI-Assisted Work
+
+When using AI to generate prototypes or initial implementations:
+
+- **Normalize to this system.** Ensure components, tokens, and typography align with this style guide.  
+- **Run the heuristic checklist.** For each new screen or flow, deliberately evaluate all ten heuristics and adjust the design.  
+- **Design all states.** Ask for and refine happy path, loading, empty, error, and high-risk states using existing components.  
+- **Preserve accessibility.** Re-check contrast, semantics, focus order, and keyboard use after AI transforms markup or styling.
+
+---
+
+## Live Reference
+
+The interactive style guide component lives at `src/pages/StyleGuide.jsx` and is accessible at `/style-guide` in local development.
+
+It renders all tokens from `index.css` in a tabbed browser view and is useful for visual QA when updating the design system.
+
+> **Note:** The route is registered in `App.jsx` but intentionally hidden from the sidebar navigation. Reach it by typing the URL directly in the browser.
+
+<!-- Source:  -->
