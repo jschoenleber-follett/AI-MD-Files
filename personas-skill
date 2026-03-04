@@ -1,0 +1,527 @@
+
+# Detailed Persona Profiles – IT & Facilities Suites
+
+These profiles synthesize our IT and Facilities personas to guide product, UX, and AI behavior across **IT Asset Manager (ITAM)** and the **Facilities Suite (Work Orders, Schedules, Utilities, Drawings, Events)**. They mirror the structure and intent of the existing persona skill you provided, tuned for operational and implementation realities in K–12.
+
+---
+
+## Sarah Jones – K‑12 IT/Technology Director
+
+### Background
+- 15+ years in education; started as a math teacher, moved into technology integration, then IT leadership.  
+- Holds a **Master’s in Educational Technology** plus **IT network administration certification**.  
+- Oversees district-wide IT infrastructure, staff, and the strategic technology plan.  
+
+
+### Daily Responsibilities
+- Manage district **hardware, software, and networks**, including security and privacy.  
+- Lead and coach IT staff; set policies and expectations for support and uptime.  
+- Develop and execute the **district technology plan** aligned to instructional goals.  
+- Evaluate new EdTech, pilots, and large-scale initiatives (1:1, LMS, assessment).  
+- Report to cabinet/board on technology investments, risk, and outcomes.  
+
+
+### Perspective on ITAM & Facilities
+**Strategic, equity- and risk-focused.**  
+- Sees ITAM and Facilities as foundational infrastructure, not “nice-to-haves.”  
+- Wants **clean, reliable data** to justify spend, manage risk, and avoid surprises (breaches, failures during testing, failed inspections).  
+- Expects any AI/automation to **reduce operational risk and noise**, not create new compliance exposure.  
+- Very sensitive to **security, privacy, and legislative compliance** across devices, work orders, assets, and utility data.  
+
+
+### Key Questions About Our Solutions
+- Will this **reduce downtime** that impacts instructional minutes?  
+- Can ITAM/Facilities give me **one version of the truth** on devices and building assets (age, condition, location, assignment)?  
+- How does this support **legislative and policy compliance** (data privacy, safety, procurement, insurance, audits)?  
+- Can I get **board-ready reporting** without exporting from five systems and living in spreadsheets?  
+- How do these tools scale across **schools with very different staff capacity and infrastructure**?  
+
+
+### Decision Criteria
+1. **Compliance & risk**: privacy, safety, audit readiness, policy alignment.  
+2. **Demonstrable ROI**: lower downtime, lower TCO per device/asset, fewer tickets, fewer emergency fixes.  
+3. **Scalability & equity**: works in bandwidth‑constrained schools with limited on‑site IT.  
+4. **Data quality & reporting**: accurate, explainable dashboards for board and cabinet.  
+5. **Fit with ecosystem**: integrates with SIS, HR, financials, help desk, and existing Facilities tools.  
+
+
+### Pain Points / Frustrations
+- **Limited budget and staff** versus ever‑expanding tech footprint.  
+- Resistance to change and inconsistent adoption by principals and teachers.  
+- **Inaccurate or fragmented data** on devices and assets, making planning and audits painful.  
+- Growing **security and cyber threats** without proportional staff growth.  
+- Feeling forced into **reactive firefighting** instead of strategic planning.  
+
+
+### Working Conditions Context
+- Works across the full **annual device and facilities lifecycle**: summer deployments, fall stabilization, mid‑year audits and planning, testing season, collections, and summer maintenance.  
+- Balances **board‑level visibility** and politics with very real constraints on time, data, and staffing.  
+
+
+### Dealbreakers
+- Any solution that **weakens security or compliance posture**.  
+- Dashboards that **contradict or can’t reconcile** with finance or SIS data.  
+- Tools that require heavy **school‑by‑school configuration** with no way to templatize.  
+- “Black box” AI/automation with no audit trail or override.  
+
+---
+
+## David Lee – IT/Technology Manager (District Technology Manager)
+
+### Background
+- Bachelor’s in Computer Science; grew from **technician → manager** inside K‑12.  
+- Manages day‑to‑day IT operations, help desk, and technician team.  
+
+
+### Daily Responsibilities
+- Oversee help desk, **ticket triage, and technician workload**.  
+- Implement and configure new tech as directed by the IT Director.  
+- Manage **device deployment, repairs, and inventory accuracy** across schools.  
+- Maintain system and process documentation; develop deployment and support procedures.  
+- Provide **budget input** (parts, replacements, staffing) and operational metrics.  
+
+
+### Perspective on ITAM & Facilities
+**Operations-obsessed, throughput-driven.**  
+- ITAM must be the **source of truth for devices**: where they are, who has them, what condition they’re in, and what they cost to keep alive.  
+- Facilities tools must reduce friction between **IT, buildings, and Facilities** when equipment or spaces impact instruction.  
+- Wants **automation around assignments, collections, and repair workflows** that his team can understand and tweak.  
+
+
+### Key Questions About Our Solutions
+- Will this help me see **ticket load, repair SLAs, and technician productivity** in real time?  
+- How quickly can we answer: *“Where is this device? Who has it? What’s its repair history?”*  
+- Can I configure **deployment and collection workflows** to match our calendar (summer, testing, end‑of‑year)?  
+- How do ITAM and Facilities reduce **parts stockouts, duplicates, and re‑work**?  
+
+
+### Decision Criteria
+1. **Operational efficiency**: fewer clicks per task, less manual spreadsheet work.  
+2. **Clear workload visibility** for ticketing, repairs, and projects.  
+3. **Inventory integrity** across deployments, re‑allocation, and collections.  
+4. **Configurable workflows** without needing developers.  
+
+
+### Pain Points / Frustrations
+- **Unrealistic expectations** for instant support during peak seasons.  
+- Limited parts budget and **unpredictable surges** in damage/repairs.  
+- Incomplete assignment data that makes **reallocation and collections painful**.  
+- Lack of **recognition** despite being central to daily operations.  
+
+
+### Working Conditions Context
+- Calendar oscillates between **deployment mode, stabilization, repair peaks, testing readiness, and collections**.  
+- Often works **nights/weekends** during summer and testing with high burnout risk on the team.  
+
+
+### Dealbreakers
+- Systems that **can’t keep up with seasonal volume** (thousands of devices in weeks).  
+- No way to **bulk update, bulk assign, or bulk import** device and asset data.  
+- Reporting that doesn’t break down by **school, technician, and time period**.  
+
+---
+
+## Maria Garcia – IT/Technology Technician (Help Desk Technician)
+
+### Background
+- Associate’s degree in IT; early‑career, eager to grow.  
+- 1–3 years of help desk / K‑12 tech support experience.  
+
+
+### Daily Responsibilities
+- First‑line tech support for **teachers, staff, and students** (passwords, logins, basic device/app issues).  
+- Document issues and resolutions in the ticketing system; escalate complex issues.  
+- Support **lab/classroom setups** and device readiness.  
+
+
+### Perspective on ITAM & Facilities
+**Task-focused and procedure-driven.**  
+- Needs **clear, step‑by‑step workflows** and knowledge base articles, not abstract dashboards.  
+- ITAM/Facilities should tell her **exactly what to do with a device or asset**: repair, swap, reassign, or retire.  
+- Any AI or automation must feel like a **trusted “copilot”** that surfaces answers, scripts, and next steps—not something that second‑guesses her in front of users.  
+
+
+### Key Questions About Our Solutions
+- When I open a ticket, can I **see device history, warranty, and status** immediately?  
+- Does the system give me **recommended troubleshooting steps** that match our environment?  
+- Can I **easily log repairs, parts, and outcomes** without hunting through menus?  
+- If something looks wrong in ITAM/Facilities, can I **fix it without breaking everything**?  
+
+
+### Decision Criteria
+- **Simplicity**: clear UI, minimal clicks, obvious status states.  
+- **Procedural guidance**: checklists, flows, or “smart forms” that reduce guesswork.  
+- **Recognition & feedback loops**: metrics that show her work matters.  
+
+
+### Pain Points / Frustrations
+- Extremely **repetitive issues** (logins, passwords, simple fixes).  
+- Impatient users who escalate immediately.  
+- Feeling **overwhelmed during surges** (start of year, testing) with little control over priorities.  
+- Limited clear **career path** without leaving K‑12.  
+
+
+### Working Conditions Context
+- Often **on the front line alone** at a school; high interrupt rate, minimal quiet time.  
+- Juggles tickets, walk‑ups, phone calls, and emails simultaneously.  
+
+
+### Dealbreakers
+- Tools that **slow her down** in front of frustrated staff/students.  
+- Complex terminology or configuration that requires constant manager intervention.  
+- Error messages that **don’t explain what to do next**.  
+
+---
+
+## Alexis Chen – K‑12 Mobile Device Manager
+
+### Background
+- ~10 years in edtech with specialization in **mobile device management (MDM)**.  
+- Focused on tablets, Chromebooks, and smartphones across the district.  
+
+
+### Daily Responsibilities
+- Deploy and manage mobile devices and **MDM policies** (security, app distribution, content filtering).  
+- Maintain **accurate inventory**: device condition, location, and usage.  
+- Implement security controls and ensure **data privacy compliance** for mobile devices.  
+- Provide support and **training for teachers and staff** on effective classroom use.  
+
+
+### Perspective on ITAM & Facilities
+**Lifecycle- and policy-centric.**  
+- ITAM must stay tightly in sync with **MDM, SIS, and HR** to reflect who should have what, and when.  
+- Wants **policy‑driven automation**: enrollment, provisioning, app scoping, compliance actions, and collection.  
+- Sees Facilities only when **device location, storage, charging, or security** depend on space and infrastructure.  
+
+
+### Key Questions About Our Solutions
+- How reliably does ITAM **sync with MDM** (one‑way vs bidirectional, lag, conflict handling)?  
+- Can I quickly see **fleet health** (battery, OS versions, compliance status, damage patterns)?  
+- Does the system help me **plan refresh and secure storage/charging** by site?  
+- What automation exists for **lost/stolen devices**, wipes, and reassignment?  
+
+
+### Decision Criteria
+- **Data integrity** between ITAM, MDM, and SIS.  
+- Strong **security and privacy posture** with clear logs and audit trails.  
+- Ability to manage **heterogeneous fleets** (OS, models, ownership models).  
+
+
+### Pain Points / Frustrations
+- Rapid evolution of mobile platforms and OS policies.  
+- Balancing **innovative apps** with strict security and content controls.  
+- Managing **diverse device types and OS versions** with limited staff.  
+
+
+### Dealbreakers
+- Any tool that **breaks or weakens existing MDM policy controls**.  
+- Manual, one‑off processes for bulk assignment, wipe, or refresh.  
+- Lack of clear **ownership and accountability** (which student/staff, which site).  
+
+---
+
+## Building IT Staff – School-Level IT Contact
+
+### Background
+- Often a **school-level tech or media/IT contact** with mixed duties (support + instruction/admin).  
+
+
+### Daily Responsibilities
+- Front‑line support for **teachers and staff**: classroom tech, connectivity, basic device issues.  
+- Maintain **school-level device assignments and collections**.  
+- Submit and track tickets/escalations to district IT.  
+
+
+### Perspective on ITAM & Facilities
+**Bridge between district systems and classroom reality.**  
+- Needs **simple tools** to keep assignments and collections accurate while juggling many roles.  
+- Sees Work Orders and Facilities data when **building issues impact instruction** (Wi‑Fi, HVAC, power).  
+
+
+### Key Questions About Our Solutions
+- Can I easily see **who has what** at my building and what’s missing?  
+- How fast is it to **log issues or collections** while dealing with students and teachers?  
+- Do Facilities/Work Orders requests clearly **tie to rooms and assets** so things get fixed once?  
+
+
+### Pain Points
+- Overwhelmed at start of year and during testing; limited authority but high expectations.  
+- Confusing or conflicting policies on **collections, fees, and device responsibility**.  
+
+
+---
+
+## Device Technician – District Repair & Deployment Tech
+
+### Background
+- Hardware-focused technician handling **imaging, repairs, and physical logistics** at scale.  
+
+
+### Daily Responsibilities
+- **Image, configure, and tag** hundreds/thousands of devices for deployment.  
+- Perform **hardware repairs** (screens, batteries, ports) and process warranty claims.  
+- Support testing readiness, device collections, and summer refurbishment.  
+
+
+### Perspective on ITAM & Facilities
+**Workflow- and physical-flow-centric.**  
+- Cares that ITAM reflects **real device condition and status** with minimal extra data entry.  
+- Needs Facilities/workspace support (storage, benches, power, cooling) to handle **peak volumes**.  
+
+
+### Key Questions About Our Solutions
+- How fast can I **scan, tag, update status**, and move to the next device?  
+- Can I trust that assignments and condition codes in ITAM **match what I see physically**?  
+- Does the system help me prioritize **repair queues** and identify patterns?  
+
+
+### Pain Points
+- **Repetitive, high-volume work** with tight deadlines and physical strain.  
+- Disorganized parts inventory and **unclear priorities** from above.  
+
+
+---
+
+## Finance Director – District Finance Leader (Technology & Assets)
+
+### Background
+- Senior finance leader accountable for **budget, audit, insurance, and ROI** on technology and facilities assets.  
+
+
+### Daily Responsibilities
+- Allocate and monitor **technology and facilities budgets**, process POs and invoices.  
+- Oversee **insurance coverage and claims** for lost/damaged devices and assets.  
+- Support **audits, depreciation schedules, and board reporting**.  
+
+
+### Perspective on ITAM & Facilities
+**Risk-, cost-, and evidence-driven.**  
+- Needs ITAM/Facilities data to be **audit-ready and reconcile with financial systems**.  
+- Sees Facilities (Utilities, Schedules, Drawings) as key to **controlling operating and capital costs**.  
+
+
+### Key Questions About Our Solutions
+- Can I **trust counts, values, and lifecycle data** for devices and assets?  
+- How do these tools help keep **budget variance low** and support capital planning?  
+- Do I get **clear reports** for board, auditors, and insurers without heroic manual effort?  
+
+
+### Pain Points
+- Incomplete or inconsistent asset data making **claims and audits painful**.  
+- Difficulty attributing technology or facilities spending to **outcomes and ROI**.  
+
+
+---
+
+## C&I Materials Director – Curriculum & Instruction Materials Leader
+
+### Background
+- Oversees **curriculum materials and their alignment with device availability** across the district.  
+
+
+### Daily Responsibilities
+- Coordinate curriculum orders and ensure **devices support required software**.  
+- Plan PD for teachers on new curriculum and technology integrations.  
+- Monitor implementation effectiveness and student outcomes.  
+
+
+### Perspective on ITAM & Facilities
+**Instruction-first, tech as enabler.**  
+- Cares that **devices are available, compatible, and reliable** where curriculum demands them.  
+- Needs visibility into conflicts between **testing, instruction, and device availability**.  
+
+
+### Key Questions About Our Solutions
+- Can ITAM show which **schools, grades, and courses have the right devices**?  
+- How do Facilities tools (Schedules, Work Orders) help avoid **instructional disruption** (rooms, HVAC, network)?  
+
+
+---
+
+## Facilities Director – District Facilities Leader
+
+*(Applies across **Utilities, Schedules, Drawings, Work Orders**.)*
+
+### Background
+- Senior leader responsible for **all district facilities operations, compliance, and capital planning**.  
+
+
+### Daily Responsibilities
+- Oversee **maintenance, custodial, utilities, and capital projects**.  
+- Ensure **safety, code compliance, and emergency readiness** across buildings.  
+- Manage **facility use/rental policies**, revenue, and community access.  
+- Provide board-level reporting on **utilization, costs, and capital needs**.  
+
+
+### Perspective on Facilities & ITAM
+**Safety and stewardship oriented.**  
+- Sees Drawings as the **system of record** for assets and emergency plans.  
+- Uses Utilities, Work Orders, and Schedules data for **cost control and ROI stories**.  
+- Wants tight coordination with IT when **building systems and technology assets intersect**.  
+
+
+### Key Questions About Our Solutions
+- Can I quickly show **board, auditors, and inspectors** that we’re safe, compliant, and efficient?  
+- Where are my **largest cost drivers and savings opportunities** across utilities and maintenance?  
+- Do Drawings and Work Orders let staff **locate assets and problems in minutes, not hours**?  
+
+
+### Pain Points
+- Outdated or inconsistent **paper drawings** and scattered asset data.  
+- Inability to **quantify ROI** of facilities investments.  
+- Difficulty coordinating across **many buildings with limited staff**.  
+
+
+---
+
+## Facilities Coordinator – Facilities Schedules Power User
+
+### Background
+- Operational leader managing **facility use, rentals, and coordination** across sites.  
+
+
+### Daily Responsibilities
+- Process external and internal **facility requests**, COIs, staffing, custodial, and fees.  
+- Prevent double bookings; coordinate **setups, cleanups, and permits**.  
+- Track **costs and compliance** for events.  
+
+
+### Perspective on Schedules & Work Orders
+**Workflow and communication hub.**  
+- Needs one system to manage **requests → approvals → staffing → billing**.  
+- Wants to reduce **phone calls, emails, and spreadsheets**.  
+
+
+### Key Questions
+- Can I process requests in **minutes instead of days** with fewer back‑and‑forth emails?  
+- Does the system **enforce COI and policy rules** automatically?  
+- Do calendars and notifications keep **everyone aligned** (custodial, security, requestors)?  
+
+
+---
+
+## Building Admin / Secretary – Building-Level Scheduler
+
+### Background
+- School secretary or admin who is the **operational hub** for building events and logistics.  
+
+
+### Daily Responsibilities
+- Schedule internal school events; coordinate **room use, staffing, and communication**.  
+- Manage building calendar, keys, visitor sign‑ins, and last‑minute changes.  
+
+
+### Perspective on Schedules & Facilities
+**Interrupt-driven and student-centered.**  
+- Needs to **quickly answer “Is the gym/cafeteria/library available?”** while juggling many duties.  
+- Wants fewer surprises and fewer **“I didn’t know about this event”** crises.  
+
+
+---
+
+## Billing Department – Facilities Rentals Billing
+
+### Background
+- Finance/AP/AR staff tracking **facility rental revenue and collections**.  
+
+
+### Daily Responsibilities
+- Generate invoices, track AR, allocate revenue to budget codes, reconcile payments.  
+
+
+### Perspective on Schedules & Utilities
+**Accuracy and auditability first.**  
+- Needs rentals and events to **flow cleanly into invoices and reports** with clear audit trails.  
+
+
+---
+
+## Community Requestor – External Group Using Facilities
+
+### Background
+- PTAs, youth sports, churches, community groups reserving district spaces.  
+
+
+### Daily Responsibilities
+- Find available space, understand **fees and requirements**, submit requests, provide COI, pay, and run events.  
+
+
+### Perspective on Schedules
+**Planning- and simplicity-focused.**  
+- Wants **transparent pricing, quick approvals, and easy payments** without insider knowledge of the district.  
+
+
+---
+
+## Facilities Technician – Maintenance & Operations Tech
+
+### Background
+- Field tech responsible for **mechanical, electrical, and building systems**.  
+
+
+### Daily Responsibilities
+- Locate and service equipment; complete **work orders** accurately; document inspections.  
+- Access specs, history, and **locations of assets** on site.  
+
+
+### Perspective on Drawings & Work Orders
+**Location and information obsessed.**  
+- Needs to find the **right asset in minutes**, not wander buildings.  
+- Wants mobile, offline‑friendly access to **drawings and asset details**.  
+
+
+---
+
+## Custodian – Custodial & Building Support
+
+### Background
+- Custodial staff supporting **cleaning, setup, and building safety** across one or multiple schools.  
+
+
+### Daily Responsibilities
+- Learn building layouts, locate cleaning and safety equipment, set up for events, and report issues.  
+
+
+### Perspective on Drawings & Schedules
+**Orientation and safety driven.**  
+- Needs simple, visual tools to understand **rooms, routes, and safety assets** quickly, especially when covering new buildings.  
+
+
+---
+
+## Facilities & Utilities CFO – Chief Financial Officer (Facilities Angle)
+
+### Background
+- CFO who is also responsible for **utility budgets and financial performance**.  
+
+
+### Daily Responsibilities
+- Budget and forecast **utility costs**, allocate by building/department, support audits and board reporting.  
+
+
+### Perspective on Utilities & Facilities
+**Macro cost and compliance focus.**  
+- Needs **accurate, building-level consumption and cost data** to keep variance low and justify investments (HVAC upgrades, solar, BAS).  
+
+
+
+
+---
+
+## Sources
+
+- [Director of IT/Technology](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3156279337)
+- [ITAM Persona Mapping - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319412229)
+- [CTO/Dir. of IT - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319608835)
+- [Finance Director - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319510544)
+- [IT/Technology Manager](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3156213788)
+- [Technology Manager - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4318396469)
+- [Device Technician - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319543306)
+- [IT/Technology Technician](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3156934661)
+- [IT Staff - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319543318)
+- [K-12 Mobile Device Manager](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3574530061)
+- [Media Specialist - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4318396493)
+- [Drawings - Personas and JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4519100417)
+- [Utilities - Personas and JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4519329805)
+- [C&I Materials Director - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319510556)
+- [Schedules - Personas and JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4504453122)
