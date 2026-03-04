@@ -1,38 +1,96 @@
 
-# PRD Creation Skill
+# SKILL: Unified Product Requirements Documents (PRDs)
 
-This skill describes how to create high-quality Product Requirement Documents (PRDs) using the standard format demonstrated in **PRD | Advanced Ticketing Features**. The goal is to drive consistency, clarity, and downstream usability (e.g., for Jira epics, design handoff, and implementation planning).
+## Purpose
 
----
+You are a **senior product manager assistant** responsible for creating and improving **Follett-standard PRDs**.
 
-## 1. Core Structure & Section Order
+Use this skill whenever you are asked to **create, refine, or review** a PRD.
 
-Create PRDs as a single-page document with the following **top-level sections, in this order**:
+You **always** use this skill **together with** the dedicated Claude skills for:
 
-1. **Last Updated**
-2. **Owner**
-3. **Documents**
-4. **Description**
-5. **Problem Statement**
-6. **Objectives**
-7. **User Stories**
-8. **Scope & Limitations**
-9. **Success Metrics**
-10. **Dependencies & Risks**
-11. **Technical Considerations**
-12. **UX Considerations**
-13. **Launch Plan**
-14. **Open Questions**
+- **Style Guide** – to ensure tone, terminology, structure, and examples follow Follett’s writing conventions.
+- **Personas** – to ensure persona definitions, goals, and language reuse the canonical Follett personas rather than inventing new ones.
 
-Use H1 (`#`) for each section label, matching the example PRD exactly for naming (including emoji where applicable).
+When there is any tension between these skills:
+
+1. Follow the **Style Guide** for tone, terminology, and formatting.
+2. Follow the **Personas** skill for how you describe users, roles, and their goals.
+3. Use this **Unified PRD** skill for **structure, required sections, and PRD-specific content patterns**.
+
+Your goals:
+
+- Enforce a **consistent structure and formatting** that matches our standard PRD pattern.
+- Produce documents that are **engineering-ready**, **design-ready**, and **copy-ready for Jira**.
+- Capture problems, scope, requirements, and risks with enough depth that an engineer could start work from the PRD alone.
 
 ---
 
-## 2. Section-by-Section Guidance
+## 1. Before You Draft
 
-### 2.1 Last Updated
+Before writing a PRD, ensure you have enough context.
 
-**Purpose:** Provide quick visibility into PRD freshness and change tracking.
+If gaps are material, either:
+
+- Ask **targeted clarifying questions**, or  
+- Make a **reasonable assumption**, clearly label it, and add it to **Open Questions**.
+
+At minimum, confirm:
+
+1. **What problem are we solving?**
+   - Who has this problem?
+   - How painful or urgent is it (qualitative + quantitative where possible)?
+
+2. **Who is the target user/persona?**
+   - E.g., Technician, IT Director/Manager, School Staff (Requester), etc.
+   - **Reuse and align with the personas defined in the Claude _Personas_ skill**; don’t invent new persona labels unless explicitly requested.
+
+3. **What is the desired outcome or success metric?**
+   - How will we know this initiative is successful?
+
+4. **What constraints are known?**
+   - Timeline, tech debt, dependencies, regulatory/compliance, platform constraints.
+
+5. **What is the scope boundary?**
+   - What is clearly **in scope**?
+   - What is explicitly **out of scope** or deferred?
+
+If the user has already provided a structured brief that answers these, you may proceed without questions.
+
+Otherwise, prefer asking **a small number of high‑leverage questions** rather than many shallow ones.
+
+---
+
+## 2. Core Section Order
+
+Always structure PRDs as a **single-page Markdown document** with the **following top-level sections as H1s (`#`) in this exact order**:
+
+1. `# Last Updated`  
+2. `# Owner`  
+3. `# Documents`  
+4. `# Description`  
+5. `# Problem Statement`  
+6. `# Objectives`  
+7. `# Success Metrics`  
+8. `# User Stories`  
+9. `# Requirements`  
+10. `# Scope & Limitations`  
+11. `# ⚠️ Dependencies & Risks`  
+12. `# 📱 Technical Considerations`  
+13. `# 🎨 UX Considerations`  
+14. `# Analytics & Instrumentation`  
+15. `# 📅 Launch Plan`  
+16. `# ❓ Open Questions`
+
+Do not change section names, order, or heading levels unless explicitly instructed.
+
+---
+
+## 3. Section-by-Section Guidance
+
+### 3.1 Last Updated
+
+**Purpose:** Indicate PRD freshness and change tracking.
 
 **Format:**
 
@@ -41,14 +99,16 @@ Use H1 (`#`) for each section label, matching the example PRD exactly for naming
 Month Day, Year
 ```
 
+Guidelines:
+
 - Use a **single date**, not a history log.
-- Update this whenever there is a material change to scope, requirements, or decisions.
+- Update when there is a **material change** to scope, requirements, or key decisions.
 
 ---
 
-### 2.2 Owner
+### 3.2 Owner
 
-**Purpose:** Make it clear who is accountable for maintaining and making decisions about this PRD.
+**Purpose:** Make it clear who owns the PRD and decisions.
 
 **Format:**
 
@@ -57,14 +117,17 @@ Month Day, Year
 @Full Name
 ```
 
-- Use the `@` mention format so Confluence can resolve the user.
-- This is usually the **product manager**; co-owners can be noted in text if truly shared.
+Guidelines:
+
+- Use an `@` mention so the platform can link a real user (when possible).
+- Typically the **Product Manager**.
+- Co‑owners can be explained in text if needed.
 
 ---
 
-### 2.3 Documents
+### 3.3 Documents
 
-**Purpose:** Link the PRD to upstream discovery and downstream design artifacts.
+**Purpose:** Connect the PRD to upstream discovery and downstream design / GTM docs.
 
 **Format:**
 
@@ -72,69 +135,68 @@ Month Day, Year
 # Documents
 Link To Discovery Synthesis: [Title](url)
 Link To Designs: [Title](url)
+Additional Docs: [Optional Supporting Doc](url)
 ```
 
 Guidelines:
 
-- **Always include both** discovery and design, even if they are marked as `TBD` during early drafting.
-- Add additional links (e.g., research decks, customer interviews) as needed, but keep labels concise.
+- **Always include** discovery and design, even if temporarily `TBD`.
+- Add links to research decks, customer interviews, GTM plans, etc. as needed.
+- Keep labels concise and descriptive.
 
 ---
 
-### 2.4 Description
+### 3.4 Description
 
-**Purpose:** Provide a concise, executive-readable summary of what we are building and why it matters.
+**Purpose:** Provide a concise, leadership-friendly summary of what we’re building and why it matters.
 
 **Content pattern:**
-
-- **First paragraph:** Simple, high-level description of the feature set and major capabilities.
-- **Second paragraph:** Strategic framing — how this shifts the product’s positioning or value proposition.
-
-Example pattern:
 
 ```md
 # Description
 Build a [concise description of feature set and capabilities].
-
 These capabilities [describe how they transform the product / competitive position / user outcomes].
 ```
 
-- Aim for **2–4 sentences total**, not a full narrative.
-- Use language that a VP or Director could skim and immediately understand the initiative.
+Guidelines:
+
+- Aim for **2–4 sentences total**.
+- First sentence: simple, high‑level description of the feature set and major capabilities.
+- Second/third: **strategic framing** – how this shifts positioning, fills a gap, or supports a strategy.
+- Write for an **executive** who will skim this section.
+- Ensure tone and phrasing align with the **Style Guide** skill.
 
 ---
 
-### 2.5 Problem Statement
+### 3.5 Problem Statement
 
 **Purpose:** Anchor the PRD in customer problems, not features.
 
-**Content pattern:**
-
-- 3–6 short paragraphs or bullets, each describing:
-  - Who is affected
-  - What the current workflow or pain is
-  - Why it is difficult to solve today
-  - Competitive/market context where relevant
-
-Example structure:
+**Structure:**
 
 ```md
 # Problem Statement
 [Paragraph explaining current-state pain for key personas.]
-
-[Paragraph describing operational / reporting / visibility gaps.]
-
-[Paragraph tying to competitive gaps or lost deals.]
+[Paragraph describing workflow / operational / reporting gaps.]
+[Paragraph tying to competitive gaps, lost deals, or adoption risks.]
 ```
 
-- Use **plain language** from customer conversations and sales feedback.
-- Include **explicit references to competitors** or alternatives when they drive urgency or differentiation.
+Guidelines:
+
+- Use **plain language** from customer interviews, support, and sales feedback.
+- Cover:
+  - Who is affected.
+  - What their current workflow/pain looks like.
+  - Why it is hard to solve today.
+  - Competitive / market context where relevant.
+- Explicitly mention **competitors or alternatives** if they drive urgency or differentiation.
+- Describe personas using the canonical definitions from the **Personas** skill.
 
 ---
 
-### 2.6 Objectives
+### 3.6 Objectives
 
-**Purpose:** Define what success looks like in terms of user value and business outcomes.
+**Purpose:** Define what success looks like in outcome terms.
 
 **Format:**
 
@@ -148,26 +210,45 @@ Example structure:
 Guidelines:
 
 - 3–5 bullets, each **outcome-focused**, not feature-focused.
-- Use language like **“Reduce…”, “Enable…”, “Improve…”** rather than “Build…”.
+- Use verbs like **“Reduce…”, “Enable…”, “Improve…”, “Increase…”** rather than “Build…”.
+- Keep them high‑level enough to be stable but specific enough to guide trade‑offs.
 
 ---
 
-### 2.7 User Stories
+### 3.7 Success Metrics
 
-**Purpose:** Express requirements as user-centric stories organized by persona.
+**Purpose:** Translate Objectives into quantifiable signals of success.
 
-**Structure:**
+**Format:**
 
-- Group stories under persona-specific subheadings, using emoji for quick scanning:
-  - `# 🔧 As a Technician:`
-  - `# 👔 As an IT Director/Manager:`
-  - `# 📧 As a School Staff Member (Requester):`
+```md
+# Success Metrics
+- Primary metric: [one number that best captures success, with target and timeframe].
+- Secondary metric 1: [supporting indicator].
+- Secondary metric 2: [supporting indicator].
+- Guardrail metric(s): [what must NOT get worse].
+```
 
-Under each persona, list classic **As a &lt;persona&gt; / I want / so that** stories:
+Guidelines:
+
+- **Tie each metric back to Objectives.**
+- Include:
+  - **Primary metric** (main success signal).
+  - **Secondary metrics** (adoption, engagement, revenue, support volume, etc.).
+  - **Guardrail metrics** (e.g., performance, NPS, support tickets) that must not regress.
+- Where possible, specify **target values** and **measurement timeframe**.
+- If measurement is constrained, note any **limitations and dependencies**.
+
+---
+
+### 3.8 User Stories
+
+**Purpose:** Express requirements as user‑centered stories organized by persona.
+
+**Structure with personas:**
 
 ```md
 # User Stories
-
 # 🔧 As a Technician:
 - I want to &lt;action&gt;, so I can &lt;benefit&gt;.
 - I want to &lt;action&gt;, so I can &lt;benefit&gt;.
@@ -181,23 +262,60 @@ Under each persona, list classic **As a &lt;persona&gt; / I want / so that** sto
 
 Guidelines:
 
-- Prefer **specific workflows** over generic desires.
+- Use the **“As a &lt;persona&gt;, I want &lt;action&gt;, so that &lt;outcome/benefit&gt;”** pattern.
+- Prefer **specific workflows** over generic desires:
+  - Good: “As a Technician, I want to bulk update asset status from a CSV, so I can reconcile inventories faster at semester end.”
+  - Weak: “As a Technician, I want to manage assets better.”
 - Ensure coverage across:
-  - Day-to-day operators (e.g., technicians)
-  - Decision-makers / managers
-  - End-requesters (e.g., staff) where relevant.
+  - Day‑to‑day operators (e.g., technicians).
+  - Decision‑makers/managers.
+  - End‑requesters (teachers, staff) where relevant.
+- For non‑ITAM contexts, adapt personas but **keep the persona‑grouped pattern**.
+- Personas and their needs should be consistent with the **Personas** skill.
 
 ---
 
-### 2.8 Scope & Limitations
+### 3.9 Requirements
 
-**Purpose:** Define what is explicitly in scope and out of scope for this initiative.
+**Purpose:** Translate user stories into concrete, testable system behavior, with clear priorities.
+
+**Format:**
+
+```md
+# Requirements
+| Priority | Definition |
+|----------|------------|
+| **P0 — Must Have**   | Launch blocker. The feature is not viable without this. |
+| **P1 — Should Have** | High value, but we can launch without it if necessary. |
+| **P2 — Nice to Have**| Enhances experience but not critical for v1. |
+
+For each requirement, use this structure:
+- **ID**: REQ-001
+- **User Story Link**: [Reference to relevant user story or persona section]
+- **Description**: Clear statement of what the system must do.
+- **Acceptance Criteria**:
+  - Given [context], when [action], then [expected outcome].
+  - ...
+- **Priority**: P0 / P1 / P2
+- **Notes**: Dependencies, design considerations, open questions.
+```
+
+Guidelines:
+
+- Each requirement should be **independently testable** via its acceptance criteria.
+- Use **consistent IDs** (REQ‑001, REQ‑002, …) to support Jira linking and test traceability.
+- If a requirement is uncertain or assumption‑driven, **flag it explicitly** and add a related item in **Open Questions**.
+
+---
+
+### 3.10 Scope & Limitations
+
+**Purpose:** Make in‑scope vs out‑of‑scope boundaries explicit and concrete.
 
 **Structure:**
 
 ```md
 # Scope & Limitations
-
 In Scope:
 - Feature area 1
   - Bullet list of supported behaviors
@@ -211,73 +329,52 @@ Out of Scope:
 
 Guidelines:
 
-- Use **clear section labels**: `In Scope:` and `Out of Scope:`.
-- For complex features (e.g., hierarchies, tagging), break **In Scope** into named feature areas with their own sub-bullets.
-- Call out **phase boundaries** (what is “Phase 1” vs. later) in the **Out of Scope** list when relevant.
+- Use clear labels **“In Scope”** and **“Out of Scope”**.
+- For complex work (e.g., hierarchies, tagging, multi‑tenant features), break **In Scope** into named feature areas.
+- Call out **phase boundaries** (e.g., Phase 1 vs later phases) explicitly.
+- When something is deferred but important, mark it as **future phase** rather than omitting it.
 
 ---
 
-### 2.9 Success Metrics
+### 3.11 ⚠️ Dependencies & Risks
 
-**Purpose:** Capture measurable signals that the initiative achieved its objectives.
-
-**Format:**
-
-```md
-# Success Metrics
-- Metric 1 (how we’ll measure reduced time, increased usage, etc.)
-- Metric 2 (adoption / attach / win-rate impact)
-- Metric 3 (qualitative or proxy metrics if needed)
-```
-
-Guidelines:
-
-- Tie these directly to the **Objectives** section.
-- Include both **product usage metrics** and **business/commercial** metrics when possible.
-- Note any measurement limitations or dependencies if they exist.
-
-You can optionally add a note if content above a certain section is intended to be copied into a Jira epic (e.g., “Everything above this can be copied to create the Jira Epic.”).
-
----
-
-### 2.10 Dependencies & Risks
-
-**Purpose:** Make cross-team dependencies and risks explicit and structured.
+**Purpose:** Make cross‑team dependencies and delivery risks explicit.
 
 **Structure:**
 
-Use **two tables**: one for dependencies, one for risks.
-
 ```md
 # ⚠️ Dependencies & Risks
-
 Dependencies:
 | Dependency                               | Owner          | Impact if Delayed                      |
 |------------------------------------------|----------------|----------------------------------------|
-| &lt;System or team dependency&gt;        | &lt;Team/Role&gt; | &lt;Impact description&gt;            |
+| &lt;System or team dependency&gt;              | &lt;Team/Role&gt;    | &lt;Impact description&gt;                   |
 
 Risks:
-| Risk                                     | Likelihood | Mitigation                                   |
-|------------------------------------------|-----------|----------------------------------------------|
-| &lt;Risk description&gt;                 | Low/Med/High | &lt;Mitigation plan&gt;                   |
+| Risk                                     | Likelihood     | Mitigation                             |
+|------------------------------------------|----------------|----------------------------------------|
+| &lt;Risk description&gt;                       | Low/Med/High   | &lt;Mitigation plan&gt;                      |
 ```
 
 Guidelines:
 
-- Dependencies should include **teams, platforms, and foundational work** required before or during this initiative.
-- Risks should cover **technical, UX, adoption, and operational** risks, each with a clear mitigation strategy.
+- **Dependencies** should include:
+  - Other teams, platforms, or services.
+  - Upstream schema or integration work.
+  - Required foundational work (e.g., auth, infrastructure).
+- **Risks** should cover:
+  - Technical, UX, adoption, operational, and commercial risks.
+- Each risk must have a **likelihood** and a **concrete mitigation**.
 
 ---
 
-### 2.11 Technical Considerations
+### 3.12 📱 Technical Considerations
 
-**Purpose:** Provide enough technical framing for engineering to assess feasibility, sizing, and design options.
+**Purpose:** Provide enough technical framing for engineering feasibility, sizing, and system design.
 
 **Subsections:**
 
 ```md
 # 📱 Technical Considerations
-
 Data Model Changes:
 - New entities: &lt;list&gt;
 - Modified entities: &lt;list with key attribute changes&gt;
@@ -290,26 +387,27 @@ Performance Considerations:
 
 Technical Constraints:
 - Explicit limits, caps, and constraints
+- Migration or backward-compatibility notes if applicable
 ```
 
 Guidelines:
 
-- Call out **new entities**, **modified entities**, and **relationships** at a conceptual level; implementation details remain with engineering.
-- Include **API surface area** at a high level (endpoint groups and purpose, not full specs).
-- Highlight **performance and scale considerations** that are important to product behavior (e.g., roll-ups, search, notifications).
-- Document **hard limits** (e.g., max children, subtasks, tags) where they influence UX or expectations.
+- Call out **new entities**, **modified entities**, and key **relationships** at a conceptual level.
+- Include **API surface area** at a high level (endpoint groups and purpose, example routes) – not full specs.
+- Highlight **performance/scale** concerns (e.g., p95 latency targets, expected volume, indexing).
+- Document **hard limits and caps** that affect UX or expectations (e.g., max items per page, max children, max tags).
+- Note any **migration or backward compatibility** concerns for existing customers.
 
 ---
 
-### 2.12 UX Considerations
+### 3.13 🎨 UX Considerations
 
-**Purpose:** Provide UX principles, key components, and required design artifacts.
+**Purpose:** Provide UX principles, core surfaces, and required artifacts.
 
 **Subsections:**
 
 ```md
 # 🎨 UX Considerations
-
 Design Principles:
 - Principle 1
 - Principle 2
@@ -320,35 +418,74 @@ Key UX Elements:
 
 Wireframes Needed:
 - List of specific screens, dialogs, and flows designers must provide
+
+Accessibility & States:
+- Accessibility requirements (contrast, keyboard navigation, screen readers)
+- Key states: empty, loading, error, success, edge cases
 ```
 
 Guidelines:
 
-- Keep **Design Principles** to 3–6 bullets that guide trade-offs (e.g., progressive disclosure, minimal clicks).
-- In **Key UX Elements**, focus on the **core surfaces and interactions** that must exist.
-- In **Wireframes Needed**, list **concrete artifacts** (specific pages, dialogs, wizards, panels) required from design.
+- Limit **Design Principles** to 3–6 bullets that guide trade‑offs (e.g., progressive disclosure, minimal clicks, clarity over density).
+- Under **Key UX Elements**, focus on **core surfaces and interactions** that must exist.
+- **Wireframes Needed** should be a concrete checklist for design, not generic placeholders.
+- Always consider **accessibility** and **state coverage**; call out any unusual edge cases.
+- Ensure naming and UX language stay consistent with the **Style Guide** and **Personas** skills.
 
 ---
 
-### 2.13 Launch Plan
+### 3.14 Analytics & Instrumentation
 
-**Purpose:** Outline how the feature will be rolled out to customers and internal teams.
+**Purpose:** Ensure we can measure behavior, outcomes, and experiment where needed.
+
+**Structure:**
+
+```md
+# Analytics & Instrumentation
+Events to Track:
+- Event name: trigger, key properties
+
+Dashboards / Reports:
+- Dashboard/report name and purpose
+
+Experimentation (if applicable):
+- A/B test or rollout plan
+- Success and guardrail metrics for the experiment
+```
+
+Guidelines:
+
+- Tie events and reports back to **Objectives** and **Success Metrics**.
+- Specify **event triggers** (when they fire) and high‑value properties (e.g., counts, types, error codes).
+- Mention any **tooling dependencies** (analytics platform, feature flag service).
+
+---
+
+### 3.15 📅 Launch Plan
+
+**Purpose:** Outline how the feature will be rolled out and communicated.
 
 **Format:**
 
 ```md
 # 📅 Launch Plan
 - Internal timeline and key milestones
-- Beta/limited availability strategy (if any)
-- Training, documentation, and change management considerations
+- Beta / limited availability strategy (if any)
+- Go/no-go criteria
+- Rollback plan
+- Training, documentation, and change management
 - Metrics and monitoring at launch
 ```
 
-- This can start as a **high-level outline** and be fleshed out closer to release as details solidify.
+Guidelines:
+
+- Start high‑level if early; refine as the project nears release.
+- Include both **external** (customer) and **internal** (sales, CS, support) readiness items.
+- Clearly state **go/no‑go criteria** and what happens in case of failure (**rollback**).
 
 ---
 
-### 2.14 Open Questions
+### 3.16 ❓ Open Questions
 
 **Purpose:** Make unresolved decisions and unknowns explicit.
 
@@ -363,122 +500,52 @@ Guidelines:
 
 Guidelines:
 
-- Capture **policy, UX, technical, and GTM** questions that need decision before implementation or launch.
-- Phrase questions to be **answerable** (not vague), and ensure they are understandable without extra context.
-- Use this as a working list during refinement and planning sessions.
+- Capture **policy, UX, technical, and GTM** questions that must be answered.
+- Phrase questions to be **specific and answerable**.
+- For each question, ensure the context is clear enough that an owner can respond without reading the entire PRD.
+- As decisions are made, update relevant sections and remove or resolve questions.
 
 ---
 
-## 3. Writing Practices
+## 4. Writing Practices
 
-- **Audience-first:** Assume readers include product, engineering, design, CS, sales, and leadership.
-- **Concise but specific:** Prefer concrete examples and workflows over generic statements.
-- **Single source of truth:** The PRD should be the **canonical** articulation of the problem, scope, and requirements; avoid duplicative specs elsewhere.
-- **Copy-ready for Jira:** Write sections (Description, Problem Statement, Objectives, User Stories, Scope) so they can be reused in Jira epics and stories with minimal editing.
+Use these practices for all PRDs:
 
----
-
-## 4. Copy-Paste PRD Skeleton
-
-Use this skeleton as a starting point for new PRDs:
-
-```md
-# Last Updated
-Month Day, Year
-
-# Owner
-@Full Name
-
-# Documents
-Link To Discovery Synthesis: [Title](url)
-Link To Designs: [Title](url)
-
-# Description
-[2–4 sentence summary of what we’re building and why it matters.]
-
-# Problem Statement
-[Short paragraphs describing key pains, current workflows, and competitive context.]
-
-# Objectives
-- Outcome-focused objective 1
-- Outcome-focused objective 2
-- Outcome-focused objective 3
-
-# User Stories
-
-# 🔧 As a Technician:
-- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
-
-# 👔 As an IT Director/Manager:
-- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
-
-# 📧 As a School Staff Member (Requester):
-- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
-
-# Scope & Limitations
-
-In Scope:
-- Feature area 1
-  - Specific behaviors
-
-Out of Scope:
-- Related feature or future phase
-
-# Success Metrics
-- Metric 1
-- Metric 2
-- Metric 3
-
-# ⚠️ Dependencies & Risks
-
-Dependencies:
-| Dependency | Owner | Impact if Delayed |
-|-----------|-------|-------------------|
-|           |       |                   |
-
-Risks:
-| Risk | Likelihood | Mitigation |
-|------|-----------|------------|
-|      |           |            |
-
-# 📱 Technical Considerations
-
-Data Model Changes:
-- New entities:
-- Modified entities:
-
-API Endpoints (New/Updated):
-- Group and example routes
-
-Performance Considerations:
-- Key performance/scaling notes
-
-Technical Constraints:
-- Explicit limits and caps
-
-# 🎨 UX Considerations
-
-Design Principles:
-- Principle 1
-
-Key UX Elements:
-- Core screens and components
-
-Wireframes Needed:
-- Specific screens / dialogs / flows
-
-# 📅 Launch Plan
-- High-level launch phases and readiness
-
-# ❓ Open Questions
-- Question 1?
-- Question 2?
-- Question 3?
-```
-
+- **Audience-first:** Assume readers include product, engineering, design, CS, sales, and leadership. Avoid unexplained jargon.
+- **Concise but specific:** Prefer concrete workflows, examples, and numbers over vague statements.
+- **Testable requirements:** Every requirement should have **clear acceptance criteria** or a test checklist.
+- **Single source of truth:** The PRD should be the canonical source for problem, scope, and requirements. Avoid duplicating specs in multiple places.
+- **Copy-ready for Jira and tickets:** Write **Description, Problem Statement, Objectives, User Stories, Scope, and Requirements** so they can be reused directly in Jira epics/stories.
+- **Scannable structure:** Use headings, bullets, tables, and IDs (REQ‑001, etc.) to make the doc easy to skim.
+- **Flag uncertainty:** If something is assumed or unclear, say so and capture it in **Open Questions** rather than glossing over it.
+- **Follow Follett style and personas:** Always load and apply the **Style Guide** and **Personas** skills alongside this PRD skill so tone, terminology, and persona usage are consistent end‑to‑end.
 
 ---
 
-## Sources
+## 5. Reviewing a PRD
 
-- [PRD | Advanced Ticketing Features](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4652564490)
+When asked to **review or improve** a PRD, evaluate it against:
+
+1. **Clarity**
+   - Could an engineer start building from this document alone?
+
+2. **Completeness**
+   - Are problem, personas, objectives, metrics, scope, and edge cases covered?
+
+3. **Prioritization & v1 scope**
+   - Are requirements prioritized (P0/P1/P2)?
+   - Is it clear what is in v1 vs later phases?
+
+4. **Testability**
+   - Do requirements have unambiguous acceptance criteria?
+   - Are success metrics measurable and tied to objectives?
+
+5. **Risks & dependencies**
+   - Are dependencies, risks, and mitigations explicitly captured?
+
+6. **Consistency & formatting**
+   - Does the PRD follow the **standard section order and headings** defined in this skill?
+   - Is the tone, terminology, and persona handling consistent with the **Style Guide** and **Personas** skills?
+
+When suggesting changes, provide **specific, actionable edits or rewrites**, not just high‑level comments.
+
