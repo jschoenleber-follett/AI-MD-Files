@@ -1,0 +1,484 @@
+
+# PRD Creation Skill
+
+This skill describes how to create high-quality Product Requirement Documents (PRDs) using the standard format demonstrated in **PRD | Advanced Ticketing Features**. The goal is to drive consistency, clarity, and downstream usability (e.g., for Jira epics, design handoff, and implementation planning).
+
+---
+
+## 1. Core Structure & Section Order
+
+Create PRDs as a single-page document with the following **top-level sections, in this order**:
+
+1. **Last Updated**
+2. **Owner**
+3. **Documents**
+4. **Description**
+5. **Problem Statement**
+6. **Objectives**
+7. **User Stories**
+8. **Scope & Limitations**
+9. **Success Metrics**
+10. **Dependencies & Risks**
+11. **Technical Considerations**
+12. **UX Considerations**
+13. **Launch Plan**
+14. **Open Questions**
+
+Use H1 (`#`) for each section label, matching the example PRD exactly for naming (including emoji where applicable).
+
+---
+
+## 2. Section-by-Section Guidance
+
+### 2.1 Last Updated
+
+**Purpose:** Provide quick visibility into PRD freshness and change tracking.
+
+**Format:**
+
+```md
+# Last Updated
+Month Day, Year
+```
+
+- Use a **single date**, not a history log.
+- Update this whenever there is a material change to scope, requirements, or decisions.
+
+---
+
+### 2.2 Owner
+
+**Purpose:** Make it clear who is accountable for maintaining and making decisions about this PRD.
+
+**Format:**
+
+```md
+# Owner
+@Full Name
+```
+
+- Use the `@` mention format so Confluence can resolve the user.
+- This is usually the **product manager**; co-owners can be noted in text if truly shared.
+
+---
+
+### 2.3 Documents
+
+**Purpose:** Link the PRD to upstream discovery and downstream design artifacts.
+
+**Format:**
+
+```md
+# Documents
+Link To Discovery Synthesis: [Title](url)
+Link To Designs: [Title](url)
+```
+
+Guidelines:
+
+- **Always include both** discovery and design, even if they are marked as `TBD` during early drafting.
+- Add additional links (e.g., research decks, customer interviews) as needed, but keep labels concise.
+
+---
+
+### 2.4 Description
+
+**Purpose:** Provide a concise, executive-readable summary of what we are building and why it matters.
+
+**Content pattern:**
+
+- **First paragraph:** Simple, high-level description of the feature set and major capabilities.
+- **Second paragraph:** Strategic framing — how this shifts the product’s positioning or value proposition.
+
+Example pattern:
+
+```md
+# Description
+Build a [concise description of feature set and capabilities].
+
+These capabilities [describe how they transform the product / competitive position / user outcomes].
+```
+
+- Aim for **2–4 sentences total**, not a full narrative.
+- Use language that a VP or Director could skim and immediately understand the initiative.
+
+---
+
+### 2.5 Problem Statement
+
+**Purpose:** Anchor the PRD in customer problems, not features.
+
+**Content pattern:**
+
+- 3–6 short paragraphs or bullets, each describing:
+  - Who is affected
+  - What the current workflow or pain is
+  - Why it is difficult to solve today
+  - Competitive/market context where relevant
+
+Example structure:
+
+```md
+# Problem Statement
+[Paragraph explaining current-state pain for key personas.]
+
+[Paragraph describing operational / reporting / visibility gaps.]
+
+[Paragraph tying to competitive gaps or lost deals.]
+```
+
+- Use **plain language** from customer conversations and sales feedback.
+- Include **explicit references to competitors** or alternatives when they drive urgency or differentiation.
+
+---
+
+### 2.6 Objectives
+
+**Purpose:** Define what success looks like in terms of user value and business outcomes.
+
+**Format:**
+
+```md
+# Objectives
+- Objective 1 (user value / efficiency / adoption)
+- Objective 2 (visibility / reporting / analytics)
+- Objective 3 (competitive positioning / win rate / retention)
+```
+
+Guidelines:
+
+- 3–5 bullets, each **outcome-focused**, not feature-focused.
+- Use language like **“Reduce…”, “Enable…”, “Improve…”** rather than “Build…”.
+
+---
+
+### 2.7 User Stories
+
+**Purpose:** Express requirements as user-centric stories organized by persona.
+
+**Structure:**
+
+- Group stories under persona-specific subheadings, using emoji for quick scanning:
+  - `# 🔧 As a Technician:`
+  - `# 👔 As an IT Director/Manager:`
+  - `# 📧 As a School Staff Member (Requester):`
+
+Under each persona, list classic **As a &lt;persona&gt; / I want / so that** stories:
+
+```md
+# User Stories
+
+# 🔧 As a Technician:
+- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
+- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
+
+# 👔 As an IT Director/Manager:
+- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
+
+# 📧 As a School Staff Member (Requester):
+- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
+```
+
+Guidelines:
+
+- Prefer **specific workflows** over generic desires.
+- Ensure coverage across:
+  - Day-to-day operators (e.g., technicians)
+  - Decision-makers / managers
+  - End-requesters (e.g., staff) where relevant.
+
+---
+
+### 2.8 Scope & Limitations
+
+**Purpose:** Define what is explicitly in scope and out of scope for this initiative.
+
+**Structure:**
+
+```md
+# Scope & Limitations
+
+In Scope:
+- Feature area 1
+  - Bullet list of supported behaviors
+- Feature area 2
+  - Bullet list of supported behaviors
+
+Out of Scope:
+- Feature/behavior not included in this phase
+- Related initiative to be tackled separately
+```
+
+Guidelines:
+
+- Use **clear section labels**: `In Scope:` and `Out of Scope:`.
+- For complex features (e.g., hierarchies, tagging), break **In Scope** into named feature areas with their own sub-bullets.
+- Call out **phase boundaries** (what is “Phase 1” vs. later) in the **Out of Scope** list when relevant.
+
+---
+
+### 2.9 Success Metrics
+
+**Purpose:** Capture measurable signals that the initiative achieved its objectives.
+
+**Format:**
+
+```md
+# Success Metrics
+- Metric 1 (how we’ll measure reduced time, increased usage, etc.)
+- Metric 2 (adoption / attach / win-rate impact)
+- Metric 3 (qualitative or proxy metrics if needed)
+```
+
+Guidelines:
+
+- Tie these directly to the **Objectives** section.
+- Include both **product usage metrics** and **business/commercial** metrics when possible.
+- Note any measurement limitations or dependencies if they exist.
+
+You can optionally add a note if content above a certain section is intended to be copied into a Jira epic (e.g., “Everything above this can be copied to create the Jira Epic.”).
+
+---
+
+### 2.10 Dependencies & Risks
+
+**Purpose:** Make cross-team dependencies and risks explicit and structured.
+
+**Structure:**
+
+Use **two tables**: one for dependencies, one for risks.
+
+```md
+# ⚠️ Dependencies & Risks
+
+Dependencies:
+| Dependency                               | Owner          | Impact if Delayed                      |
+|------------------------------------------|----------------|----------------------------------------|
+| &lt;System or team dependency&gt;        | &lt;Team/Role&gt; | &lt;Impact description&gt;            |
+
+Risks:
+| Risk                                     | Likelihood | Mitigation                                   |
+|------------------------------------------|-----------|----------------------------------------------|
+| &lt;Risk description&gt;                 | Low/Med/High | &lt;Mitigation plan&gt;                   |
+```
+
+Guidelines:
+
+- Dependencies should include **teams, platforms, and foundational work** required before or during this initiative.
+- Risks should cover **technical, UX, adoption, and operational** risks, each with a clear mitigation strategy.
+
+---
+
+### 2.11 Technical Considerations
+
+**Purpose:** Provide enough technical framing for engineering to assess feasibility, sizing, and design options.
+
+**Subsections:**
+
+```md
+# 📱 Technical Considerations
+
+Data Model Changes:
+- New entities: &lt;list&gt;
+- Modified entities: &lt;list with key attribute changes&gt;
+
+API Endpoints (New/Updated):
+- Endpoint group: description and example routes
+
+Performance Considerations:
+- Key scaling, caching, and query considerations
+
+Technical Constraints:
+- Explicit limits, caps, and constraints
+```
+
+Guidelines:
+
+- Call out **new entities**, **modified entities**, and **relationships** at a conceptual level; implementation details remain with engineering.
+- Include **API surface area** at a high level (endpoint groups and purpose, not full specs).
+- Highlight **performance and scale considerations** that are important to product behavior (e.g., roll-ups, search, notifications).
+- Document **hard limits** (e.g., max children, subtasks, tags) where they influence UX or expectations.
+
+---
+
+### 2.12 UX Considerations
+
+**Purpose:** Provide UX principles, key components, and required design artifacts.
+
+**Subsections:**
+
+```md
+# 🎨 UX Considerations
+
+Design Principles:
+- Principle 1
+- Principle 2
+- Principle 3
+
+Key UX Elements:
+- Core screens / components and how they should behave
+
+Wireframes Needed:
+- List of specific screens, dialogs, and flows designers must provide
+```
+
+Guidelines:
+
+- Keep **Design Principles** to 3–6 bullets that guide trade-offs (e.g., progressive disclosure, minimal clicks).
+- In **Key UX Elements**, focus on the **core surfaces and interactions** that must exist.
+- In **Wireframes Needed**, list **concrete artifacts** (specific pages, dialogs, wizards, panels) required from design.
+
+---
+
+### 2.13 Launch Plan
+
+**Purpose:** Outline how the feature will be rolled out to customers and internal teams.
+
+**Format:**
+
+```md
+# 📅 Launch Plan
+- Internal timeline and key milestones
+- Beta/limited availability strategy (if any)
+- Training, documentation, and change management considerations
+- Metrics and monitoring at launch
+```
+
+- This can start as a **high-level outline** and be fleshed out closer to release as details solidify.
+
+---
+
+### 2.14 Open Questions
+
+**Purpose:** Make unresolved decisions and unknowns explicit.
+
+**Format:**
+
+```md
+# ❓ Open Questions
+- Question 1?
+- Question 2?
+- Question 3?
+```
+
+Guidelines:
+
+- Capture **policy, UX, technical, and GTM** questions that need decision before implementation or launch.
+- Phrase questions to be **answerable** (not vague), and ensure they are understandable without extra context.
+- Use this as a working list during refinement and planning sessions.
+
+---
+
+## 3. Writing Practices
+
+- **Audience-first:** Assume readers include product, engineering, design, CS, sales, and leadership.
+- **Concise but specific:** Prefer concrete examples and workflows over generic statements.
+- **Single source of truth:** The PRD should be the **canonical** articulation of the problem, scope, and requirements; avoid duplicative specs elsewhere.
+- **Copy-ready for Jira:** Write sections (Description, Problem Statement, Objectives, User Stories, Scope) so they can be reused in Jira epics and stories with minimal editing.
+
+---
+
+## 4. Copy-Paste PRD Skeleton
+
+Use this skeleton as a starting point for new PRDs:
+
+```md
+# Last Updated
+Month Day, Year
+
+# Owner
+@Full Name
+
+# Documents
+Link To Discovery Synthesis: [Title](url)
+Link To Designs: [Title](url)
+
+# Description
+[2–4 sentence summary of what we’re building and why it matters.]
+
+# Problem Statement
+[Short paragraphs describing key pains, current workflows, and competitive context.]
+
+# Objectives
+- Outcome-focused objective 1
+- Outcome-focused objective 2
+- Outcome-focused objective 3
+
+# User Stories
+
+# 🔧 As a Technician:
+- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
+
+# 👔 As an IT Director/Manager:
+- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
+
+# 📧 As a School Staff Member (Requester):
+- I want to &lt;action&gt;, so I can &lt;benefit&gt;.
+
+# Scope & Limitations
+
+In Scope:
+- Feature area 1
+  - Specific behaviors
+
+Out of Scope:
+- Related feature or future phase
+
+# Success Metrics
+- Metric 1
+- Metric 2
+- Metric 3
+
+# ⚠️ Dependencies & Risks
+
+Dependencies:
+| Dependency | Owner | Impact if Delayed |
+|-----------|-------|-------------------|
+|           |       |                   |
+
+Risks:
+| Risk | Likelihood | Mitigation |
+|------|-----------|------------|
+|      |           |            |
+
+# 📱 Technical Considerations
+
+Data Model Changes:
+- New entities:
+- Modified entities:
+
+API Endpoints (New/Updated):
+- Group and example routes
+
+Performance Considerations:
+- Key performance/scaling notes
+
+Technical Constraints:
+- Explicit limits and caps
+
+# 🎨 UX Considerations
+
+Design Principles:
+- Principle 1
+
+Key UX Elements:
+- Core screens and components
+
+Wireframes Needed:
+- Specific screens / dialogs / flows
+
+# 📅 Launch Plan
+- High-level launch phases and readiness
+
+# ❓ Open Questions
+- Question 1?
+- Question 2?
+- Question 3?
+```
+
+
+---
+
+## Sources
+
+- [PRD | Advanced Ticketing Features](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4652564490)
