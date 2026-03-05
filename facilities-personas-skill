@@ -1,0 +1,562 @@
+---
+name: facilities-personas-skill
+description: Skill for referencing Facilities Suite persona profiles (Work Orders, Schedules, Drawings, Utilities, Events Registration). Use this skill whenever working on product decisions, UX design, PRDs, feature prioritization, competitive positioning, sales enablement, GTM materials, AI feature design, or user research for the Facilities Suite. Trigger when the user mentions facilities personas, facilities users, work order users, scheduling users, custodial staff, maintenance technicians, facilities director needs, community requestors, building admin workflows, utility tracking, or any Facilities Suite product work that should be grounded in user context.
+---
+
+# Detailed Persona Profiles – Facilities Suite
+
+These profiles guide product, UX, AI behavior, and GTM strategy across the **Facilities Suite**: Work Orders, Schedules, Drawings, Utilities, and Events Registration. Each persona is structured to support decisions about feature design, onboarding, messaging, competitive positioning, and AI assistant behavior.
+
+**Products covered:** Work Orders, Schedules, Drawings, Utilities, Events Registration
+
+---
+
+## Robert Thompson – District Facilities Director
+
+### Background
+- **Education:** Bachelor's in Facilities Management, Construction Management, or related field; often holds industry certifications (CFM, FMP, or state-specific)
+- **Experience:** 15–25 years in facilities operations; may have started in trades (HVAC, electrical) before moving into management
+- **District Size:** Responsible for 10–40+ buildings across a district, totaling 1M–5M+ square feet
+- **Reporting Structure:** Reports to CFO, COO, or Superintendent; presents to school board on capital and safety
+- **Budget Authority:** $2M–$15M+ annually across maintenance, custodial, utilities, and capital projects
+
+### Daily Responsibilities
+- Oversee **maintenance, custodial, utilities, and capital projects** across all district buildings
+- Ensure **safety, code compliance, and emergency readiness** (fire, ADA, environmental, OSHA)
+- Manage **facility use/rental policies**, revenue, and community access
+- Provide board-level reporting on **utilization, costs, and capital needs**
+- Coordinate with IT when building systems and technology assets intersect
+
+### Perspective on Facilities Suite
+**Safety and stewardship oriented.**
+- Sees Drawings as the **system of record** for building assets and emergency plans
+- Uses Utilities, Work Orders, and Schedules data for **cost control and ROI stories**
+- Work Orders should give him **real-time visibility into backlog, response times, and technician productivity** — not require him to walk buildings or call foremen
+- Wants tight coordination with IT when building systems and technology assets intersect (HVAC controls, security cameras, network closets)
+
+### AI Perspective & Concerns
+**Open but accountability-focused:**
+- Interested in AI for **predictive maintenance** (flag equipment likely to fail based on age, run hours, and repair history)
+- Wants AI-powered **energy anomaly detection** across utilities data
+- Concerned about AI making safety-related recommendations without professional review
+- Will adopt AI that helps him **tell a data-driven story to the board** about facilities investment ROI
+
+**Key AI Questions:**
+- Can AI help me prioritize my capital improvement plan based on real condition data?
+- Will predictive maintenance alerts reduce emergency work orders, or just create alert fatigue?
+- How does AI handle liability — if it recommends deferring maintenance and something fails?
+- Can AI help me benchmark our utility costs against similar districts?
+
+### Decision Criteria
+1. **Safety & compliance**: code adherence, inspection readiness, emergency preparedness
+2. **Cost control & ROI**: demonstrable savings in maintenance, utilities, and capital deferral
+3. **Operational visibility**: real-time work order status, technician productivity, backlog aging
+4. **Board-readiness**: reports and dashboards that translate operations into investment narratives
+5. **Scalability**: works across buildings of different ages, types, and condition levels
+
+### Pain Points
+- Outdated or inconsistent **paper drawings** and scattered asset data across buildings
+- Inability to **quantify ROI** of facilities investments in terms the board understands
+- Difficulty coordinating across **many buildings with limited staff**
+- Reactive maintenance culture — always fighting fires instead of preventing them
+- Being the last to know about events booked in buildings he's responsible for
+
+### Working Conditions Context
+- Summer = capital projects, deep cleaning, and major system maintenance — his busiest season
+- School year = balancing routine maintenance with emergency response and event support
+- Often pulled into **crisis mode** (pipe burst, HVAC failure, safety incident) with no warning
+- Must justify every dollar to finance while buildings age faster than budgets grow
+
+### What Would Make Our Solution Valuable
+1. Building condition dashboard: asset age, repair history, and predicted failure risk by system
+2. Work order analytics: backlog aging, response time trends, cost per building, technician utilization
+3. Utility consumption anomaly alerts (spike detection, building-level benchmarking)
+4. Drawings that staff can actually use — digital, searchable, with assets pinned to locations
+5. Board presentation package: auto-generated capital needs summary with cost trends and projections
+6. Single view of all scheduled events, maintenance, and community use across every building
+
+### Red Flags That Would Kill a Proposal
+- No mobile access for field staff — his technicians live on phones and tablets, not desktops
+- System that treats each building as a silo rather than supporting district-wide views
+- Work order system with no SLA tracking or priority escalation logic
+- Can't integrate with existing financial systems for PO and budget tracking
+- Requires all staff to be highly tech-literate — his custodians and tradespeople need simple UIs
+
+---
+
+## Linda Morales – Facilities Coordinator (Schedules Power User)
+
+### Background
+- **Education:** Associate's or Bachelor's degree; often has background in office management or event coordination
+- **Experience:** 5–15 years in district operations; may have started as a school secretary
+- **Role:** Operational leader managing facility use, rentals, and coordination across all sites
+- **Reports to:** Facilities Director or Business Manager
+- **Daily Volume:** Processes 10–30+ facility requests per week across the district
+
+### Daily Responsibilities
+- Process external and internal **facility requests**: availability checks, COIs, staffing needs, custodial coordination, and fee calculation
+- Prevent **double bookings**; coordinate setups, cleanups, and permits
+- Track **costs and compliance** for events (insurance, fees, alcohol permits, security)
+- Manage relationships with **regular community groups** (sports leagues, churches, PTAs)
+- Generate invoices and manage AR for facility rentals
+
+### Perspective on Facilities Suite
+**Workflow and communication hub.**
+- Needs one system to manage the full lifecycle: **requests → approvals → staffing → event execution → billing**
+- Wants to reduce **phone calls, emails, and spreadsheets** — currently her main tools
+- Schedules must enforce rules automatically (COI requirements, blackout dates, fee structures) so she's not the policy police
+
+### AI Perspective & Concerns
+**Eager for automation — drowning in manual processes:**
+- Wants AI to **auto-check COI compliance, calculate fees, and flag conflicts** before she even reviews a request
+- Interested in AI-drafted **responses to common requestor questions** (pricing, availability, requirements)
+- Concerned about AI approving something that violates policy — she's personally accountable
+- Needs AI that handles the routine so she can focus on complex multi-day events and VIP bookings
+
+**Key AI Questions:**
+- Can AI pre-fill request forms based on the requestor's history?
+- Will AI catch COI expirations before an event, not after?
+- Can AI suggest optimal room assignments based on group size, equipment needs, and availability?
+- How does AI handle exceptions (fee waivers, special approvals) that require human judgment?
+
+### Decision Criteria
+1. **Workflow completeness**: covers the full request-to-billing lifecycle in one system
+2. **Policy enforcement**: COI, fee, and blackout rules applied automatically
+3. **Communication efficiency**: automated notifications to custodial, security, and requestors
+4. **Calendar accuracy**: real-time conflict detection across all buildings
+5. **Revenue tracking**: clear invoicing and AR tied to events
+
+### Pain Points
+- Spending 60%+ of her time on email/phone coordination that could be automated
+- Manual COI tracking in spreadsheets — discovering expired COIs after events have happened
+- Fee calculation errors from inconsistent rate tables across buildings
+- No single calendar view — has to check multiple systems to avoid conflicts
+- Community groups that don't understand district requirements and need hand-holding
+
+### Working Conditions Context
+- Fall and spring = peak request volume (sports seasons, holiday events, spring programs)
+- Summer = facility improvement projects competing with community camps and programs
+- Acts as the **face of the district** to community groups — her responsiveness affects public perception
+- Gets caught between requestors wanting quick answers and internal approvals that take days
+
+### What Would Make Our Solution Valuable
+1. Online request portal with self-service availability checking and fee estimation
+2. Automated COI validation: upload once, system tracks expiration and blocks non-compliant events
+3. Rule-based auto-approval for standard requests (recurring groups, low-risk events)
+4. Integrated invoicing: event → invoice → payment tracking without re-keying
+5. Multi-building calendar with conflict detection and setup/teardown buffer times
+6. Automated notifications: custodial gets setup details, requestor gets confirmation, security gets schedule
+
+### Red Flags That Would Kill a Proposal
+- No self-service portal for community requestors (all requests still come through her)
+- Can't handle recurring events with exception dates
+- Fee structures that can't vary by building, day of week, time of day, and group type
+- No integration with billing/AR systems
+- System that requires her to manually notify custodial and security for every event
+
+---
+
+## Karen Mitchell – Building Admin / Secretary (Building-Level Scheduler)
+
+### Background
+- **Education:** High school diploma or associate's degree; learned on the job
+- **Experience:** 5–20+ years as a school secretary or administrative assistant
+- **Role:** Operational hub for the building — manages the principal's calendar, building events, and logistics
+- **Unique Context:** This person handles scheduling as one of 15+ daily responsibilities, not their primary job
+
+### Daily Responsibilities
+- Schedule internal school events; coordinate **room use, staffing, and communication**
+- Manage building calendar, keys, visitor sign‑ins, and last‑minute changes
+- Answer phones, greet visitors, handle student needs, support the principal — constantly interrupted
+- Relay facility requests to district facilities coordinator
+- Communicate event changes to teachers, custodians, and parents
+
+### Perspective on Facilities Suite
+**Interrupt-driven and student-centered.**
+- Needs to **quickly answer "Is the gym/cafeteria/library available?"** while juggling many duties
+- Wants fewer surprises and fewer **"I didn't know about this event"** crises
+- Doesn't want to be the bottleneck for scheduling — wants teachers and staff to self-serve where possible
+
+### AI Perspective & Concerns
+**Practical — "make it as simple as my phone calendar":**
+- Would love AI that auto-suggests available rooms based on event type and past bookings
+- Nervous about technology that's more complex than what she already uses
+- Wants AI that prevents mistakes (double bookings, missing setups) rather than requiring her to learn new workflows
+- Concerned about being responsible for a system she doesn't fully understand
+
+**Key AI Questions:**
+- Is this as easy as Google Calendar or am I going to need training?
+- What happens when two people book the same room — does it catch that automatically?
+- Can teachers see availability themselves so they stop calling me?
+
+### Decision Criteria
+1. **Speed**: answers availability questions in seconds, not minutes
+2. **Simplicity**: interface she can learn in under an hour
+3. **Visibility**: building-level calendar everyone can see to reduce "I didn't know" problems
+4. **Self-service**: teachers and staff can check availability and request rooms without calling her
+
+### Pain Points
+- Constant interruptions make it impossible to maintain a mental model of the building calendar
+- Last-minute event changes that cascade into custodial, setup, and communication scrambles
+- Being blamed when double bookings or missed setups happen
+- Paper-based or email-based processes that have no audit trail
+
+### Working Conditions Context
+- Handles 50–100+ interruptions per day — scheduling is squeezed between everything else
+- Back-to-school, open house, testing, and graduation seasons are peak chaos
+- Often the person who's been at the school longest and holds institutional knowledge in her head
+
+### What Would Make Our Solution Valuable
+1. Visual building calendar showing all rooms, events, and conflicts at a glance
+2. Self-service room request for teachers with auto-approval for low-risk internal events
+3. Automated custodial/setup notifications when events are booked or changed
+4. Mobile-friendly so she can check and update from anywhere in the building
+5. One-click ability to share event details with parents, teachers, or custodians
+
+### Red Flags That Would Kill a Proposal
+- Requires more than 1 hour of training to do basic tasks
+- More complicated than the paper calendar or Google Calendar she currently uses
+- No mobile access
+- Teachers still have to call her for every room question
+
+---
+
+## Billing Department – Facilities Rentals Billing
+
+### Background
+- **Education:** Associate's or Bachelor's in Accounting or Business Administration
+- **Experience:** Finance/AP/AR staff with 3–10+ years in school district business office
+- **Role:** Tracks facility rental revenue, generates invoices, and manages collections
+- **Reports to:** Business Manager, Controller, or CFO
+
+### Daily Responsibilities
+- Generate invoices for facility rentals tied to completed or upcoming events
+- Track AR, send payment reminders, and manage collections for delinquent accounts
+- Allocate revenue to correct **budget codes** by building, fund, and account
+- Reconcile payments and prepare **revenue reports** for finance leadership and auditors
+
+### Perspective on Facilities Suite
+**Accuracy and auditability first.**
+- Needs rentals and events to **flow cleanly into invoices and reports** with clear audit trails
+- Wants fee calculations to be **system-driven, not manually computed** by the facilities coordinator
+- Needs a clear link between the event, the fee, the invoice, and the payment — no gaps
+
+### AI Perspective & Concerns
+**Conservative — numbers must be right:**
+- Would welcome AI that **auto-generates invoices** from confirmed events with correct fee calculations
+- Interested in AI that flags **overdue accounts and suggests collection actions**
+- Will not trust AI-generated financial data unless she can trace every number back to a source record
+- Concerned about AI creating invoices for events that were changed or cancelled after booking
+
+**Key AI Questions:**
+- If an event is modified after invoicing, does the system auto-adjust or alert me?
+- Can AI catch revenue leakage (events that happened but were never invoiced)?
+- How does the system handle fee waivers and special pricing — is there an approval trail?
+
+### Decision Criteria
+1. **Accuracy**: fee calculations must match approved rate schedules exactly
+2. **Audit trail**: every invoice traceable to an event, fee schedule, and approval
+3. **Integration**: exports to or syncs with district financial system (Munis, Infinite Visions, etc.)
+4. **Automation**: reduce manual invoice generation and AR tracking
+
+### Pain Points
+- Manually creating invoices from event spreadsheets or emails
+- Discrepancies between what facilities coordinator quotes and what gets invoiced
+- No systematic follow-up on overdue payments — revenue leakage
+- Audit findings related to missing documentation or inconsistent fee application
+
+### What Would Make Our Solution Valuable
+1. Auto-generated invoices from confirmed events with correct fees and budget codes
+2. AR aging dashboard with automated payment reminders
+3. Revenue reports by building, group type, and time period
+4. Clear audit trail: event → fee calculation → invoice → payment → GL entry
+5. Integration with district financial software (export or API)
+
+### Red Flags That Would Kill a Proposal
+- Fee calculations that can't be overridden with proper approval documentation
+- No export to district financial systems
+- System that generates invoices without clear linkage to the underlying event and fee schedule
+- No audit trail for fee waivers or adjustments
+
+---
+
+## Community Requestor – External Group Using Facilities
+
+### Background
+- **Role:** PTA leaders, youth sports coaches, church group coordinators, dance studio owners, community organization volunteers
+- **Tech Comfort:** Ranges widely from smartphone-only users to office professionals
+- **Frequency:** Some are one-time requestors; others book weekly for entire seasons
+- **Unique Context:** They don't work for the district, don't know district jargon, and just want to use a space
+
+### Daily Responsibilities (Event-Related)
+- Find available space that fits their group's size, schedule, and equipment needs
+- Understand **fees, requirements, and rules** (COI, custodial fees, alcohol policies, hours)
+- Submit requests, provide COI documentation, pay fees, and coordinate event logistics
+- Communicate with their own group members about confirmed dates and logistics
+
+### Perspective on Schedules
+**Planning- and simplicity-focused.**
+- Wants **transparent pricing, quick approvals, and easy payments** without insider knowledge of the district
+- Frustrated by opaque processes where they submit a request and hear nothing for days
+- Recurring groups want to feel like **valued partners**, not administrative burdens
+
+### AI Perspective & Concerns
+**Consumer expectations — "make it like booking an Airbnb":**
+- Expects a **self-service portal** where they can see availability, pricing, and requirements upfront
+- Would appreciate AI that **recommends spaces** based on their event type and group size
+- Wants instant or near-instant confirmation for simple bookings
+- Concerned about hidden fees or surprise requirements after they've already planned their event
+
+**Key AI Questions:**
+- Can I see real-time availability and pricing before I submit anything?
+- Will the system remind me when my COI is expiring?
+- Can I rebook my recurring reservation for next season in one step?
+
+### Decision Criteria (What Makes Them Choose/Return to a District)
+1. **Transparency**: clear pricing, requirements, and timelines upfront
+2. **Speed**: quick turnaround on requests and approvals
+3. **Ease**: simple portal, minimal paperwork, online payment
+4. **Communication**: proactive updates on request status, reminders, and changes
+5. **Fairness**: consistent application of rules and fees
+
+### Pain Points
+- Submitting a request and waiting days or weeks for a response
+- Discovering COI or insurance requirements late in the process
+- Confusing fee structures that differ by building with no clear explanation
+- Having to call or email for every question instead of finding answers online
+- Feeling like an outsider dealing with bureaucracy
+
+### What Would Make Our Solution Valuable
+1. Public-facing portal: search availability by date, building, room type, and capacity
+2. Upfront fee calculator with all requirements listed before submission
+3. Online COI upload with automated expiration tracking and renewal reminders
+4. Online payment (credit card, ACH) with receipt and confirmation
+5. Request status tracking: submitted → under review → approved → confirmed
+6. Recurring booking management: renew, modify, or cancel a season in one action
+
+### Red Flags That Would Kill a Proposal
+- No self-service — everything still requires a phone call or email
+- Can't see pricing until after submitting a request
+- No online payment option
+- Request status is a black box with no visibility
+
+---
+
+## Mike Hernandez – Facilities Technician (Maintenance & Operations Tech)
+
+### Background
+- **Education:** Trade certification (HVAC, electrical, plumbing) or equivalent experience
+- **Experience:** 5–20 years in building maintenance; may have worked commercial before K‑12
+- **Role:** Field tech responsible for mechanical, electrical, plumbing, and building system repairs
+- **District Assignment:** Responsible for 2–6 buildings depending on district size
+- **Schedule:** 6:00 AM – 2:30 PM typical; on-call for emergencies
+
+### Daily Responsibilities
+- Receive and complete **work orders** for repairs, preventive maintenance, and inspections
+- Locate and service equipment using **building drawings and asset records**
+- Document completed work, parts used, and asset condition
+- Access specs, manuals, and **repair history** for building systems on site
+- Respond to **emergency calls** (leaks, HVAC failures, electrical issues, safety hazards)
+
+### Perspective on Facilities Suite
+**Location and information obsessed.**
+- Needs to find the **right asset in the right room in minutes**, not wander buildings guessing
+- Wants mobile access to **drawings with assets pinned to location** — this is his map
+- Work Orders must show **full context**: what's wrong, where it is, what was done before, and what parts he might need
+- Offline access is non-negotiable — many mechanical rooms, basements, and older buildings have no connectivity
+
+### AI Perspective & Concerns
+**"Just get me the info I need faster":**
+- Would welcome AI that **surfaces repair history and suggested actions** when he opens a work order
+- Interested in AI that identifies **recurring issues** on an asset so he can recommend replacement instead of another patch
+- Doesn't want to type long descriptions — voice-to-text or smart dropdowns would be ideal
+- Suspicious of AI that tells him how to do his trade — he knows HVAC, he needs information, not instruction
+
+**Key AI Questions:**
+- Can I voice-dictate my work order notes instead of typing on a phone in a boiler room?
+- Will the system show me what was done on this unit last time without scrolling through months of records?
+- Can AI tell me if this unit has hit end-of-life based on repair frequency and cost?
+- Does it work when I'm in a basement with no cell signal?
+
+### Decision Criteria
+1. **Speed to information**: asset location, history, and specs in under 30 seconds
+2. **Mobile-first**: works on a phone with gloves, in poor lighting, and with spotty connectivity
+3. **Offline capability**: must function in low/no connectivity environments
+4. **Minimal data entry**: smart defaults, dropdowns, and voice input over free-text typing
+5. **Accuracy**: what the system says matches what's physically in the building
+
+### Pain Points
+- Paper work orders or desktop-only systems that don't go into the field
+- Walking buildings trying to find equipment that's not labeled or mapped
+- Repair histories that live in someone's head, not in a system
+- Duplicate work because previous repair notes weren't documented
+- Being sent to a job without knowing what parts to bring
+
+### Working Conditions Context
+- Physically demanding: climbing ladders, crawling in mechanical spaces, carrying tools
+- Constantly moving between buildings — windshield time is real
+- Emergencies interrupt planned maintenance daily
+- Works alone most of the time; needs to be self-sufficient with information
+
+### What Would Make Our Solution Valuable
+1. Mobile work order app: receive, view, update, and close from the field
+2. Drawings with asset pins: tap a room, see every piece of equipment and its history
+3. Work order context: problem description + asset history + last repair + parts likely needed
+4. Voice-to-text for work order notes and completion comments
+5. Offline mode that syncs when back in connectivity
+6. Photo documentation: snap a picture of the issue and attach to the work order
+
+### Red Flags That Would Kill a Proposal
+- Desktop-only system with no real mobile app
+- No offline capability
+- Requires extensive typing on a phone to complete a work order
+- Drawings that are static PDFs rather than interactive, searchable maps
+- Asset data that's wrong or out of date — he'll stop trusting and stop using it
+
+---
+
+## Tony Washington – Custodian (Custodial & Building Support)
+
+### Background
+- **Education:** High school diploma; on-the-job training
+- **Experience:** 1–15 years in custodial work; may be covering multiple schools
+- **Role:** Custodial staff supporting cleaning, event setup/teardown, and building safety
+- **Schedule:** Split shifts common (morning setup, evening cleaning) or second shift (2:00 PM – 10:30 PM)
+- **Tech Comfort:** Low to moderate — uses a smartphone for personal use but limited enterprise software experience
+
+### Daily Responsibilities
+- **Clean and maintain** assigned areas on a daily schedule
+- **Set up and tear down** for school events, assemblies, and community rentals
+- Learn building layouts, locate **cleaning supplies, safety equipment, and utility shutoffs**
+- Report maintenance issues (leaks, broken fixtures, safety hazards) via work orders
+- **Cover unfamiliar buildings** when colleagues are absent
+
+### Perspective on Facilities Suite
+**Orientation and safety driven.**
+- Needs simple, visual tools to understand **rooms, routes, and safety assets** quickly
+- When covering a new building, needs to find **exits, AED locations, fire extinguishers, and utility shutoffs** fast
+- Schedules integration is critical — needs to know **what events are happening tonight** and what setup is required
+- Work Orders should be **dead simple to submit**: tap a room, describe the problem, done
+
+### AI Perspective & Concerns
+**"Keep it simple — I'm not a computer person":**
+- Would appreciate AI that **pushes tonight's event setup instructions** to his phone automatically
+- Interested in visual building maps that show him where to go and what to clean
+- Anxious about using complex software — fears making mistakes or looking incompetent
+- Wants voice input or simple taps, not forms with dropdowns and required fields
+
+**Key AI Questions:**
+- Can I just tap a picture of a problem and have it create a work order for me?
+- Will it tell me what events are in my building tonight without me having to look it up?
+- If I'm at a building I've never been to, can it show me where everything is?
+
+### Decision Criteria
+1. **Simplicity**: must be usable with minimal training (under 30 minutes)
+2. **Visual**: maps and images over text and menus
+3. **Push notifications**: proactive info about events and schedule changes
+4. **Speed**: submit a work order or check a schedule in under 60 seconds
+5. **Forgiveness**: easy to undo mistakes, hard to break anything
+
+### Pain Points
+- Arriving at a building for an event setup with no information about what's needed
+- Covering a new building and not knowing where anything is
+- Paper-based reporting that gets lost or ignored
+- Feeling disconnected from decisions that affect his work
+- Being the last to know about schedule changes
+
+### Working Conditions Context
+- Often works alone, especially on second shift — no one to ask questions
+- May cover 2–3 buildings in a week during staff shortages
+- Physical work: lifting, moving furniture, operating floor machines
+- Limited time to check devices — needs information pushed to him, not pulled
+
+### What Would Make Our Solution Valuable
+1. Tonight's events and setup requirements pushed to his phone at shift start
+2. Visual building maps: rooms, cleaning zones, safety equipment, utility shutoffs
+3. One-tap work order submission: select room → describe issue (photo or voice) → submit
+4. New building orientation mode: guided walkthrough of key locations
+5. Simple daily checklist tied to his cleaning route
+6. Schedule change alerts so he's never surprised by a last-minute event
+
+### Red Flags That Would Kill a Proposal
+- Requires a login process more complex than a 4-digit PIN or face ID
+- Interface assumes familiarity with enterprise software conventions
+- No visual/map-based navigation
+- Requires reading long text descriptions to understand what's needed
+- No push notifications — relies on him checking the app proactively
+
+---
+
+## Facilities & Utilities CFO – Chief Financial Officer (Facilities Angle)
+
+### Background
+- **Education:** MBA, CPA, or equivalent; strong public-sector finance background
+- **Experience:** 15–25 years in school district finance or government financial management
+- **Role:** CFO who is also responsible for utility budgets, facilities capital planning, and financial performance reporting
+- **Reports to:** Superintendent; presents to school board finance committee
+- **Budget Authority:** Oversees total facilities/utilities budget often in the $5M–$20M+ range
+
+### Daily Responsibilities
+- Budget and forecast **utility costs**, allocate by building/department
+- Support **audits and board reporting** on facilities financial performance
+- Evaluate **capital investment proposals** (HVAC upgrades, solar, BAS, roof replacements) for ROI
+- Negotiate **utility contracts and rate structures** with providers
+- Ensure **bond and grant fund compliance** for facilities capital projects
+
+### Perspective on Facilities Suite
+**Macro cost and compliance focus.**
+- Needs **accurate, building-level consumption and cost data** to keep budget variance low
+- Wants to justify investments (HVAC upgrades, solar, BAS) with **data-driven ROI analysis**
+- Utilities data should feed directly into **budget forecasts and variance reports**
+- Sees Work Orders data as a cost signal: rising maintenance costs = capital investment trigger
+
+### AI Perspective & Concerns
+**ROI-oriented — AI must save money or prove value:**
+- Interested in AI for **utility cost forecasting** and anomaly detection (billing errors, consumption spikes)
+- Wants AI to help build **capital investment business cases** with projected savings and payback periods
+- Concerned about AI projections being wrong and embarrassing him at the board
+- Needs AI outputs that can withstand auditor scrutiny
+
+**Key AI Questions:**
+- Can AI detect billing errors from utility providers before I pay them?
+- Will predictive models for utility costs be more accurate than my team's spreadsheets?
+- Can AI help me model the ROI of a $2M HVAC upgrade with real consumption data?
+- How does AI handle weather normalization in utility benchmarking?
+
+### Decision Criteria
+1. **Financial accuracy**: building-level cost allocation that reconciles with the GL
+2. **Forecasting**: utility budget projections that account for rate changes, weather, and occupancy
+3. **ROI modeling**: capital investment analysis using actual consumption and cost data
+4. **Compliance**: bond and grant fund tracking with audit-ready documentation
+5. **Benchmarking**: cost-per-square-foot and cost-per-student comparisons across buildings
+
+### Pain Points
+- Utility data trapped in provider portals with no automated aggregation
+- Budget variance surprises from unexpected consumption or rate changes
+- Difficulty proving ROI of energy efficiency investments to justify capital requests
+- Bond compliance reporting that requires manual assembly from multiple systems
+- Facilities requests for capital dollars with no data-backed justification
+
+### What Would Make Our Solution Valuable
+1. Automated utility data ingestion from all providers into one dashboard
+2. Building-level cost allocation with square footage and occupancy normalization
+3. Anomaly detection: consumption spikes, billing errors, and rate change alerts
+4. Capital ROI calculator: input a project, model savings with real consumption baselines
+5. Budget-to-actual variance tracking with drill-down by building, utility type, and time period
+6. Exportable audit-ready reports for bond compliance and board presentations
+
+### Red Flags That Would Kill a Proposal
+- Utility data requires manual entry rather than automated ingestion
+- No building-level cost allocation capability
+- Financial data that doesn't reconcile with district GL
+- No export to district financial systems
+- ROI projections with no methodology transparency
+
+---
+
+## Sources
+
+- [Drawings - Personas and JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4519100417)
+- [Utilities - Personas and JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4519329805)
+- [Schedules - Personas and JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4504453122)
+- [Finance Director - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319510544)
