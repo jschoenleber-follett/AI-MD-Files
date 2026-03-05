@@ -1,0 +1,495 @@
+---
+name: technology-personas-skill
+description: Skill for referencing Technology Suite persona profiles (ITAM, Help Desk, Resource Manager). Use this skill whenever working on product decisions, UX design, PRDs, feature prioritization, competitive positioning, sales enablement, GTM materials, AI feature design, or user research for the Technology Suite. Trigger when the user mentions technology personas, IT personas, ITAM users, help desk users, device management users, technician workflows, IT director needs, or any Technology Suite product work that should be grounded in user context.
+---
+
+# Detailed Persona Profiles – Technology Suite
+
+These profiles guide product, UX, AI behavior, and GTM strategy across the **Technology Suite**: IT Asset Manager (ITAM), Help Desk, and Resource Manager. Each persona is structured to support decisions about feature design, onboarding, messaging, competitive positioning, and AI assistant behavior.
+
+**Products covered:** IT Asset Manager (ITAM), Help Desk, Resource Manager
+
+---
+
+## Sarah Jones – K‑12 IT/Technology Director
+
+### Background
+- **Education:** Master's in Educational Technology + IT network administration certification
+- **Experience:** 15+ years in education; started as a math teacher, moved into technology integration, then IT leadership
+- **District Size:** Oversees 12–25 schools with mixed urban/suburban demographics
+- **Reporting Structure:** Reports to Assistant Superintendent or directly to Superintendent; presents to school board
+- **Budget Authority:** $500K–$2M+ annually for technology infrastructure, staffing, and licensing
+
+### Daily Responsibilities
+- Manage district **hardware, software, and networks**, including security and privacy
+- Lead and coach IT staff; set policies and expectations for support and uptime
+- Develop and execute the **district technology plan** aligned to instructional goals
+- Evaluate new EdTech, pilots, and large-scale initiatives (1:1, LMS, assessment)
+- Report to cabinet/board on technology investments, risk, and outcomes
+
+### Perspective on Technology Suite
+**Strategic, equity- and risk-focused.**
+- Sees ITAM and Help Desk as foundational infrastructure, not "nice-to-haves"
+- Wants **clean, reliable data** to justify spend, manage risk, and avoid surprises (breaches, failures during testing, failed inspections)
+- Expects any AI/automation to **reduce operational risk and noise**, not create new compliance exposure
+- Very sensitive to **security, privacy, and legislative compliance** across devices, tickets, and asset data
+
+### AI Perspective & Concerns
+**Cautiously optimistic but compliance-first:**
+- Has been burned by vendor AI promises that didn't deliver at K‑12 scale
+- Wants AI that **reduces noise** (smarter ticket routing, proactive alerts) rather than creating new decision fatigue
+- Deeply concerned about **student data flowing through AI models** — needs clear data residency, processing, and retention answers
+- Will champion AI internally only if she can explain it to the board in plain language with clear guardrails
+
+**Key AI Questions:**
+- What data does the AI model see, store, or learn from? Is it FERPA/COPPA compliant?
+- Can I audit AI decisions and override them?
+- Does AI reduce my team's workload or add a new system to manage?
+- How do I explain this to a school board member who reads AI scare headlines?
+
+### Decision Criteria
+1. **Compliance & risk**: privacy, safety, audit readiness, policy alignment
+2. **Demonstrable ROI**: lower downtime, lower TCO per device, fewer tickets, fewer emergency fixes
+3. **Scalability & equity**: works in bandwidth‑constrained schools with limited on‑site IT
+4. **Data quality & reporting**: accurate, explainable dashboards for board and cabinet
+5. **Fit with ecosystem**: integrates with SIS, HR, financials, MDM, help desk
+
+### Pain Points / Frustrations
+- **Limited budget and staff** versus ever‑expanding tech footprint
+- Resistance to change and inconsistent adoption by principals and teachers
+- **Inaccurate or fragmented data** on devices and assets, making planning and audits painful
+- Growing **security and cyber threats** without proportional staff growth
+- Feeling forced into **reactive firefighting** instead of strategic planning
+
+### Working Conditions Context
+- Works across the full **annual device lifecycle**: summer deployments, fall stabilization, mid‑year audits and planning, testing season, collections, and summer maintenance
+- Balances **board‑level visibility** and politics with very real constraints on time, data, and staffing
+- Peak stress: testing season (devices must work), budget season (must justify spend), and breach/incident response
+
+### What Would Make Our Solution Valuable
+1. Board-ready dashboards she can pull up in 30 seconds without massaging data
+2. Proactive risk alerts (aging fleet, warranty expirations, compliance gaps) instead of reactive surprises
+3. Single source of truth across ITAM, Help Desk, and MDM that she doesn't have to reconcile manually
+4. AI that automates the mundane (ticket categorization, assignment suggestions) without touching student PII
+5. Clear ROI story she can tell at budget time with real data from the system
+
+### Red Flags That Would Kill a Proposal
+- Any solution that **weakens security or compliance posture**
+- Dashboards that **contradict or can't reconcile** with finance or SIS data
+- Tools that require heavy **school‑by‑school configuration** with no way to templatize
+- "Black box" AI/automation with no audit trail or override
+- Vague or incomplete privacy/security documentation
+- Vendor requires access to student-level data to deliver core functionality
+
+---
+
+## David Lee – IT/Technology Manager (District Technology Manager)
+
+### Background
+- **Education:** Bachelor's in Computer Science
+- **Experience:** 8–12 years; grew from technician → manager inside K‑12
+- **Role:** Manages day‑to‑day IT operations, help desk, and technician team
+- **Team Size:** 3–15 technicians depending on district size
+- **Reports to:** IT/Technology Director
+
+### Daily Responsibilities
+- Oversee help desk, **ticket triage, and technician workload**
+- Implement and configure new tech as directed by the IT Director
+- Manage **device deployment, repairs, and inventory accuracy** across schools
+- Maintain system and process documentation; develop deployment and support procedures
+- Provide **budget input** (parts, replacements, staffing) and operational metrics
+
+### Perspective on Technology Suite
+**Operations-obsessed, throughput-driven.**
+- ITAM must be the **source of truth for devices**: where they are, who has them, what condition they're in, and what they cost to keep alive
+- Help Desk must surface **workload, SLAs, and bottlenecks** without manual tracking
+- Wants **automation around assignments, collections, and repair workflows** that his team can understand and tweak
+
+### AI Perspective & Concerns
+**Pragmatic adopter — show me the time savings:**
+- Interested in AI for **ticket routing, auto-categorization, and suggested resolutions** that reduce his team's cognitive load
+- Skeptical of AI that requires him to become a prompt engineer or configure complex rules
+- Wants AI that learns from **his district's patterns**, not generic IT playbooks
+- Concerned about AI making wrong assignments during peak volume when mistakes are most costly
+
+**Key AI Questions:**
+- Will AI ticket routing actually reduce escalations, or just shuffle problems?
+- Can I see and adjust the logic behind AI suggestions?
+- Does it get smarter over time based on our resolution data?
+- What happens during peak seasons — does AI handle volume spikes gracefully?
+
+### Decision Criteria
+1. **Operational efficiency**: fewer clicks per task, less manual spreadsheet work
+2. **Clear workload visibility** for ticketing, repairs, and projects
+3. **Inventory integrity** across deployments, re‑allocation, and collections
+4. **Configurable workflows** without needing developers
+
+### Pain Points / Frustrations
+- **Unrealistic expectations** for instant support during peak seasons
+- Limited parts budget and **unpredictable surges** in damage/repairs
+- Incomplete assignment data that makes **reallocation and collections painful**
+- Lack of **recognition** despite being central to daily operations
+- Spending more time in spreadsheets than managing his team
+
+### Working Conditions Context
+- Calendar oscillates between **deployment mode, stabilization, repair peaks, testing readiness, and collections**
+- Often works **nights/weekends** during summer and testing with high burnout risk on the team
+- Is the translation layer between the Director's strategy and the technicians' reality
+
+### What Would Make Our Solution Valuable
+1. Real-time dashboard showing ticket queue depth, SLA status, and tech workload by school
+2. Bulk operations for deployment, collection, and reassignment that handle thousands of devices
+3. Automated repair workflow that tracks device → diagnosis → parts → repair → return
+4. Reporting he can hand to the Director without rebuilding in Excel
+5. AI that pre-categorizes tickets and suggests assignment so his team hits the ground running
+
+### Red Flags That Would Kill a Proposal
+- Systems that **can't keep up with seasonal volume** (thousands of devices in weeks)
+- No way to **bulk update, bulk assign, or bulk import** device and asset data
+- Reporting that doesn't break down by **school, technician, and time period**
+- AI that can't be overridden or tuned when it's making bad suggestions
+
+---
+
+## Maria Garcia – IT/Technology Technician (Help Desk Technician)
+
+### Background
+- **Education:** Associate's degree in IT; early‑career, eager to grow
+- **Experience:** 1–3 years of help desk / K‑12 tech support
+- **Role:** First-line tech support at school sites
+- **Reports to:** IT/Technology Manager
+- **Schedule:** 7:30 AM – 4:00 PM, occasional after-hours for events or deployments
+
+### Daily Responsibilities
+- First‑line tech support for **teachers, staff, and students** (passwords, logins, basic device/app issues)
+- Document issues and resolutions in the ticketing system; escalate complex issues
+- Support **lab/classroom setups** and device readiness
+
+### Perspective on Technology Suite
+**Task-focused and procedure-driven.**
+- Needs **clear, step‑by‑step workflows** and knowledge base articles, not abstract dashboards
+- ITAM should tell her **exactly what to do with a device**: repair, swap, reassign, or retire
+- Help Desk should surface **device context immediately** when she opens a ticket — no hunting
+
+### AI Perspective & Concerns
+**Practical and honest — "will this make me look stupid?":**
+- Open to AI that acts as a **copilot** surfacing answers, scripts, and next steps
+- Anxious about AI second-guessing her in front of frustrated teachers
+- Worried she'll be asked questions about AI she can't answer
+- Wants AI suggestions she can accept/reject with one click, not a conversation
+
+**Key AI Questions:**
+- Will AI suggestions make me faster, or will I spend time correcting them?
+- If AI recommends something wrong, will I get blamed?
+- Can I learn from the AI's suggestions to grow my own skills?
+- Is there a simple way to tell the AI "that was wrong" so it improves?
+
+### Decision Criteria
+- **Simplicity**: clear UI, minimal clicks, obvious status states
+- **Procedural guidance**: checklists, flows, or "smart forms" that reduce guesswork
+- **Recognition & feedback loops**: metrics that show her work matters
+
+### Pain Points / Frustrations
+- Extremely **repetitive issues** (logins, passwords, simple fixes)
+- Impatient users who escalate immediately
+- Feeling **overwhelmed during surges** (start of year, testing) with little control over priorities
+- Limited clear **career path** without leaving K‑12
+
+### Working Conditions Context
+- Often **on the front line alone** at a school; high interrupt rate, minimal quiet time
+- Juggles tickets, walk‑ups, phone calls, and emails simultaneously
+- Gets blamed when tech doesn't work even if it's a network or vendor issue
+
+### What Would Make Our Solution Valuable
+1. Opening a ticket instantly shows device history, warranty status, and assignment info
+2. AI suggests troubleshooting steps she can follow or skip — not a wall of text
+3. One-click logging of repairs, parts used, and resolution
+4. Mobile-friendly interface for working at carts and in classrooms, not just at a desk
+5. Clear escalation path that doesn't feel like she's "giving up"
+
+### Red Flags That Would Kill a Proposal
+- Tools that **slow her down** in front of frustrated staff/students
+- Complex terminology or configuration that requires constant manager intervention
+- Error messages that **don't explain what to do next**
+- AI that makes suggestions she can't understand or explain to the person she's helping
+
+---
+
+## Alexis Chen – K‑12 Mobile Device Manager
+
+### Background
+- **Education:** Bachelor's in Information Systems or related field
+- **Experience:** ~10 years in edtech with specialization in mobile device management (MDM)
+- **Role:** Manages MDM platform, device fleet health, and policy enforcement
+- **Focus Devices:** Chromebooks, iPads, and increasingly Windows laptops across 1:1 and shared-cart models
+
+### Daily Responsibilities
+- Deploy and manage mobile devices and **MDM policies** (security, app distribution, content filtering)
+- Maintain **accurate inventory**: device condition, location, and usage
+- Implement security controls and ensure **data privacy compliance** for mobile devices
+- Provide support and **training for teachers and staff** on effective classroom use
+
+### Perspective on Technology Suite
+**Lifecycle- and policy-centric.**
+- ITAM must stay tightly in sync with **MDM, SIS, and HR** to reflect who should have what, and when
+- Wants **policy‑driven automation**: enrollment, provisioning, app scoping, compliance actions, and collection
+- Help Desk tickets about devices should automatically surface MDM status and compliance data
+
+### AI Perspective & Concerns
+**Data integrity focused — AI must not corrupt the source of truth:**
+- Interested in AI for **anomaly detection** (devices off-policy, unexpected enrollment changes, sync failures)
+- Deeply concerned about AI-driven automation that could trigger mass policy changes or wipes by mistake
+- Wants AI to flag issues for human review, not auto-remediate without approval
+
+**Key AI Questions:**
+- How reliably does ITAM **sync with MDM** (one‑way vs bidirectional, lag, conflict handling)?
+- Can I quickly see **fleet health** (battery, OS versions, compliance status, damage patterns)?
+- Does the system help me **plan refresh and secure storage/charging** by site?
+- What automation exists for **lost/stolen devices**, wipes, and reassignment?
+
+### Decision Criteria
+- **Data integrity** between ITAM, MDM, and SIS
+- Strong **security and privacy posture** with clear logs and audit trails
+- Ability to manage **heterogeneous fleets** (OS, models, ownership models)
+
+### Pain Points / Frustrations
+- Rapid evolution of mobile platforms and OS policies
+- Balancing **innovative apps** with strict security and content controls
+- Managing **diverse device types and OS versions** with limited staff
+- MDM sync issues that cascade into inaccurate ITAM data and assignment errors
+
+### Working Conditions Context
+- Peak stress during **summer provisioning** (imaging thousands of devices) and **testing season** (every device must be compliant)
+- The person everyone calls when a sync goes wrong or a device fleet is out of compliance
+
+### What Would Make Our Solution Valuable
+1. Real-time ITAM↔MDM sync dashboard showing conflicts, lag, and resolution status
+2. Fleet health view: OS compliance, battery health, damage rates by school and model
+3. Automated enrollment/unenrollment workflows triggered by SIS changes
+4. Proactive alerts when sync anomalies or policy drift exceed thresholds
+5. Bulk remediation tools with approval gates (not auto-fire)
+
+### Red Flags That Would Kill a Proposal
+- Any tool that **breaks or weakens existing MDM policy controls**
+- Manual, one‑off processes for bulk assignment, wipe, or refresh
+- Lack of clear **ownership and accountability** (which student/staff, which site)
+- ITAM data that lags MDM by more than 24 hours without clear conflict resolution
+
+---
+
+## Building IT Staff – School-Level IT Contact
+
+### Background
+- **Education:** Varies widely — some have IT credentials, others are media specialists or admin staff with tech aptitude
+- **Experience:** Often a **school-level tech or media/IT contact** with mixed duties (support + instruction/admin)
+- **Role:** Bridge between district IT systems and classroom reality
+- **Unique Constraint:** This is frequently a split-role person — they're not 100% IT
+
+### Daily Responsibilities
+- Front‑line support for **teachers and staff**: classroom tech, connectivity, basic device issues
+- Maintain **school-level device assignments and collections**
+- Submit and track tickets/escalations to district IT
+
+### Perspective on Technology Suite
+**Bridge between district systems and classroom reality.**
+- Needs **simple tools** to keep assignments and collections accurate while juggling many roles
+- ITAM should let them see **who has what** at their building without needing district-level access or training
+- Help Desk should let them **log and track issues quickly** without learning complex workflows
+
+### AI Perspective & Concerns
+**Cautious — "don't add to my plate":**
+- Would welcome AI that auto-drafts ticket descriptions from their quick notes
+- Worried about being responsible for AI tools they didn't choose and can't configure
+- Wants AI that works in the background, not another interface to learn
+
+### Key Questions About Our Solutions
+- Can I easily see **who has what** at my building and what's missing?
+- How fast is it to **log issues or collections** while dealing with students and teachers?
+- Can I scan a device and see its full history without navigating multiple screens?
+
+### Pain Points
+- Overwhelmed at start of year and during testing; limited authority but high expectations
+- Confusing or conflicting policies on **collections, fees, and device responsibility**
+- Often the person parents and teachers blame first, with the least power to fix root causes
+
+### Working Conditions Context
+- May handle IT duties for only 2–3 hours per day while also serving as media specialist, secretary, or instructional coach
+- Has to troubleshoot with what they know — detailed KB articles and simple UIs are lifelines
+
+### What Would Make Our Solution Valuable
+1. Building-level device dashboard: assigned, unassigned, damaged, missing — one screen
+2. Quick-scan collection and assignment workflows optimized for hallway/classroom use
+3. Ticket submission that pre-fills device info from a scan
+4. Clear escalation to district IT that doesn't feel like a black hole
+
+### Red Flags That Would Kill a Proposal
+- Requires district-level permissions or training to do basic building tasks
+- Complex navigation to answer simple questions ("does this student have a device?")
+- No mobile-optimized interface for walking the building
+
+---
+
+## Device Technician – District Repair & Deployment Tech
+
+### Background
+- **Education:** Technical certification or associate's degree; hardware-focused
+- **Experience:** 2–5 years in device repair, imaging, and logistics
+- **Role:** Hardware-focused technician handling imaging, repairs, and physical logistics at scale
+- **Work Environment:** Warehouse, repair bench, and school sites during deployments
+
+### Daily Responsibilities
+- **Image, configure, and tag** hundreds/thousands of devices for deployment
+- Perform **hardware repairs** (screens, batteries, ports) and process warranty claims
+- Support testing readiness, device collections, and summer refurbishment
+
+### Perspective on Technology Suite
+**Workflow- and physical-flow-centric.**
+- Cares that ITAM reflects **real device condition and status** with minimal extra data entry
+- Needs a system that keeps up with **scan-tag-update-move** cadence — seconds per device, not minutes
+- Help Desk integration means repair tickets should flow to his queue with device info pre-loaded
+
+### AI Perspective & Concerns
+**"Just don't slow me down":**
+- Open to AI that **predicts parts needs** based on repair trends (e.g., "order more Chromebook screens before September")
+- Interested in AI-powered **pattern detection** (batch defects, recurring model issues)
+- Will ignore AI if it requires typing or clicking more than the current workflow
+
+### Key Questions About Our Solutions
+- How fast can I **scan, tag, update status**, and move to the next device?
+- Can I trust that assignments and condition codes in ITAM **match what I see physically**?
+- Does the system help me prioritize **repair queues** and identify patterns?
+
+### Pain Points
+- **Repetitive, high-volume work** with tight deadlines and physical strain
+- Disorganized parts inventory and **unclear priorities** from above
+- Data entry that feels duplicative — updating ITAM after already logging in MDM or a spreadsheet
+
+### Working Conditions Context
+- Summer deployment = 6-week sprint imaging and deploying thousands of devices
+- Repair bench during school year with constant queue pressure
+- Often standing, moving carts, working with hands — needs mobile/scannable interface
+
+### What Would Make Our Solution Valuable
+1. Scan-driven workflows: scan a device, see status, update with one tap
+2. Repair queue prioritized by urgency, SLA, and parts availability
+3. Parts inventory tracking tied to repair workflows (auto-decrement on use)
+4. Batch operations for imaging, tagging, and deployment prep
+5. Pattern alerts: "This Chromebook model has 3x the screen failure rate — flag for warranty claim"
+
+### Red Flags That Would Kill a Proposal
+- Requires typing device info that could be scanned
+- No offline or low-connectivity mode for warehouse and school site work
+- Can't handle bulk operations (100+ devices at a time)
+- Repair logging takes more than 3 taps per device
+
+---
+
+## Finance Director – District Finance Leader (Technology & Assets)
+
+### Background
+- **Education:** MBA, CPA, or equivalent; finance leadership background
+- **Experience:** 10–20 years in school district finance or public-sector accounting
+- **Role:** Senior finance leader accountable for budget, audit, insurance, and ROI on technology assets
+- **Reports to:** Superintendent or CFO
+
+### Daily Responsibilities
+- Allocate and monitor **technology budgets**, process POs and invoices
+- Oversee **insurance coverage and claims** for lost/damaged devices
+- Support **audits, depreciation schedules, and board reporting**
+
+### Perspective on Technology Suite
+**Risk-, cost-, and evidence-driven.**
+- Needs ITAM data to be **audit-ready and reconcile with financial systems**
+- Wants device counts, values, and lifecycle data to be **trustworthy enough to stake her name on** in board presentations
+- Sees Help Desk data as a cost signal: high ticket volumes = potential budget need or vendor problem
+
+### AI Perspective & Concerns
+**Skeptical but outcome-oriented:**
+- Will embrace AI if it produces **reliable financial reports** without manual reconciliation
+- Concerned about AI-generated numbers being "close enough" rather than audit-grade accurate
+- Wants AI to flag anomalies (budget overruns, unusual claim patterns) rather than generate projections she can't verify
+
+### Key Questions About Our Solutions
+- Can I **trust counts, values, and lifecycle data** for devices and assets?
+- How do these tools help keep **budget variance low** and support capital planning?
+- Do I get **clear reports** for board, auditors, and insurers without heroic manual effort?
+
+### Pain Points
+- Incomplete or inconsistent asset data making **claims and audits painful**
+- Difficulty attributing technology spending to **outcomes and ROI**
+- Reconciling device counts between ITAM, MDM, and the general ledger
+
+### What Would Make Our Solution Valuable
+1. Device asset register that reconciles with the GL and depreciation schedules
+2. Insurance/claims reporting: lost, stolen, and damaged devices with values and dates
+3. TCO analysis by device model, school, and grade level
+4. Budget-to-actual variance dashboards she can trust without spot-checking
+5. Exportable, audit-ready reports in formats her auditors expect
+
+### Red Flags That Would Kill a Proposal
+- Asset data that doesn't reconcile with financial records
+- No clear depreciation or valuation methodology
+- Reports that require manual cleanup before sharing with auditors or board
+
+---
+
+## C&I Materials Director – Curriculum & Instruction Materials Leader
+
+### Background
+- **Education:** MEd in Curriculum & Instruction or related field
+- **Experience:** 10–15 years in education, blending instructional leadership with materials/resource management
+- **Role:** Oversees curriculum materials procurement and ensures alignment between devices and instructional needs
+- **Reports to:** Assistant Superintendent for C&I or equivalent
+
+### Daily Responsibilities
+- Coordinate curriculum orders and ensure **devices support required software**
+- Plan PD for teachers on new curriculum and technology integrations
+- Monitor implementation effectiveness and student outcomes
+
+### Perspective on Technology Suite
+**Instruction-first, tech as enabler.**
+- Cares that **devices are available, compatible, and reliable** where curriculum demands them
+- Needs visibility into conflicts between **testing, instruction, and device availability**
+- ITAM is relevant when device specs or availability blocks curriculum access
+
+### AI Perspective & Concerns
+**Interested if it serves instruction:**
+- Excited about AI that helps identify **which schools/grades lack compatible devices** for new curriculum adoptions
+- Wants AI to surface scheduling conflicts between testing windows and curriculum rollouts
+- Not interested in AI for its own sake — only if it removes barriers to instruction
+
+### Key Questions About Our Solutions
+- Can ITAM show which **schools, grades, and courses have the right devices**?
+- How do Help Desk trends reveal **instructional disruption patterns** (rooms, network, devices)?
+
+### Pain Points
+- Curriculum adoptions that fail because devices can't run the software
+- Zero visibility into device readiness until teachers complain
+- No connection between C&I planning timelines and IT deployment schedules
+
+### What Would Make Our Solution Valuable
+1. Device compatibility matrix: curriculum app requirements mapped against deployed fleet
+2. Proactive alerts when new curriculum adoptions have device/OS conflicts
+3. Shared calendar view between C&I and IT for deployment and adoption timelines
+4. School-level readiness scorecards for upcoming curriculum implementations
+
+### Red Flags That Would Kill a Proposal
+- No way to view device capabilities through an instructional lens (only IT jargon)
+- System that treats C&I as an afterthought rather than a key stakeholder in device planning
+
+---
+
+## Sources
+
+- [Director of IT/Technology](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3156279337)
+- [ITAM Persona Mapping - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319412229)
+- [CTO/Dir. of IT - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319608835)
+- [Finance Director - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319510544)
+- [IT/Technology Manager](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3156213788)
+- [Technology Manager - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4318396469)
+- [Device Technician - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319543306)
+- [IT/Technology Technician](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3156934661)
+- [IT Staff - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319543318)
+- [K-12 Mobile Device Manager](https://follett.atlassian.net/wiki/spaces/RMPT/pages/3574530061)
+- [Media Specialist - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4318396493)
+- [C&I Materials Director - Calendar of JTBD](https://follett.atlassian.net/wiki/spaces/RMPT/pages/4319510556)
