@@ -1,0 +1,58 @@
+# Component Skill Reference
+
+Quick reference for which skills to invoke at each phase and where to find them.
+
+## Skill Paths
+
+| Skill | Path | Invoked In |
+|---|---|---|
+| Market Analysis | `/mnt/skills/user/market-analysis/SKILL.md` | Phase 1 |
+| Competitor Analysis | `/mnt/skills/user/competitor-analysis/SKILL.md` | Phase 2 |
+| Technology Personas | `/mnt/skills/user/technology-personas-skill/SKILL.md` | Phase 3 (Technology products) |
+| Facilities Personas | `/mnt/skills/user/facilities-personas-skill/SKILL.md` | Phase 3 (Facilities products) |
+| Product Strategy Canvas | `/mnt/skills/user/product-strategy/SKILL.md` | Phase 4 |
+
+## Product-to-Persona Mapping
+
+When determining which persona skill(s) to load in Phase 3:
+
+### Technology Suite → technology-personas-skill
+- IT Asset Manager (ITAM)
+- Help Desk
+- Resource Manager
+
+**Key personas:** IT/Technology Director (Sarah Jones), IT Manager (David Lee), Device Technician (Marcus Rivera), IT Staff, Finance Director (Tech angle), C&I Materials Director
+
+### Facilities Suite → facilities-personas-skill
+- Work Orders
+- Schedules
+- Drawings
+- Utilities
+- Events Registration
+- Facilities Mobile
+
+**Key personas:** Facilities Director (Robert Thompson), Facilities Coordinator (Linda Morales), Maintenance Technician (Mike Chen), Custodian (Carlos Ramirez), Facilities & Utilities CFO
+
+### Cross-Suite / Platform → both persona skills
+- Unified IT + Facilities platform
+- Follett 360 / cross-domain asset visibility
+- Any strategy that spans Technology and Facilities
+
+## Competitive Landscape Quick Reference
+
+When running Phase 2, start with these known competitors by domain:
+
+### Technology Suite
+- **Incident IQ** — direct competitor (ITAM, Help Desk, asset management)
+- **Jamf** — adjacent (MDM, Apple device management; partnership angle)
+- **Generic ITSM** — ServiceNow, Freshservice, etc. (not K-12 native)
+- **CDW/Insight** — adjacent (procurement + lifecycle services)
+
+### Facilities Suite
+- **SchoolDude / Brightly (Siemens)** — direct competitor (work orders, schedules, utilities)
+- **FMX** — direct competitor (facilities management, work orders)
+- **Frontline Education** — adjacent (HR, absence, some facilities overlap)
+- **Generic CMMS** — Fiix, UpKeep, Hippo, etc. (not K-12 native)
+
+### Cross-Suite / Platform
+- No known competitor currently spans both K-12 IT asset management AND facilities management in a unified platform — this is a potential differentiation angle.
